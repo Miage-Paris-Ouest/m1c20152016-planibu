@@ -22,3 +22,9 @@ Voici un diagramme de classe du plan interactif de BU Afin d’avoir une visibil
 </br>
 
 ![Google logo](http://img15.hostingpics.net/pics/189688DiagrammedeClasseBUNewPage1.png "google logo")
+
+#Diagrame d'état-transition :#
+<br>
+Afin de montrer les différents états de l'application voici un diagramme d'état-transition explicatif : 
+</br>
+![Google logo](http://img15.hostingpics.net/pics/111516ActiviteBUUseCase.png "google logo")
