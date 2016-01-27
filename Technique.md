@@ -17,3 +17,9 @@ GIT est un logiciel de gestion de versions décentralisé. C'est un logiciel lib
 
 #Architecture:#
 #Diagrame de Classe :#
+<br>
+Voici un diagramme de classe du plan interactif de BU Afin d’avoir une visibilité globale sur les différentes relations entre les élements :
+</br>
+
+![Google logo](http://img15.hostingpics.net/pics/http://img15.hostingpics.net/pics/189688Diagramme "google logo")
+
