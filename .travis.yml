@@ -1,5 +1,8 @@
 
 android:
+jdk:
+  - oraclejdk7
+  - openjdk7
   components:
     # Update Android SDK Tools
     - tools
