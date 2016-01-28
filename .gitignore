@@ -1,12 +1,22 @@
-.gradle
-.DS_Store
-/captures
-/settings.gradle
+
+*.class
+
+# IntelliJ
+.idea
 *.iml
-*.iws
-*.ipr
-.idea/
-local.properties
-*/build/
-*~
-*.swp
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# note: some other rules could/should be in your HOME .gitignore_global file
+# *~
+# .DS_Store
