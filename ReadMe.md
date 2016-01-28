@@ -18,33 +18,7 @@ Voici un diagramme des principaux cas d’utilisations de plan interactif de BU 
 ![Google logo](http://img15.hostingpics.net/pics/153393BibliothequeUseCase1.jpg "google logo")
 
 
-#Description textuelle d'un cas d'utilisation#
 
-Nom: Plan interactif BU 
-Acteur: Utilisateur
-Données d'entrée: Salle sélectionnés par un utilisateur
-Le cas d'utilisation commence lorsque l’utilisateur ouvre l’application
-
-Scénario principal:
-1. L’application affiche un plan général de la BU, propose de rechercher directement une cote dans la barre de recherche ou d’accéder à un menu.
-2. L’utilisateur choisit de chercher un livre par discipline dans le menu.
-3. L’application propose à l’utilisateur de sélectionner une sous-discipline parmi une liste rangée par discipline.
-4. L’utilisateur choisit une sous-discipline et valide
-5. L’application affiche la zone sélectionnée sur la map.
-6. L’utilisateur choisit de tracer l’itinéraire pour y aller ou non.
-
-Scénario d'erreur: Tracé d’itinéraire indisponible
-6a. L’application affiche un message d'erreur
-Retour à l'étape 5.
-Scénario alternatif:
-
-2a. L’utilisateur choisit de chercher un livre par racine de cote dans le menu.
-Le scénario reprend à l'étape 5
-Scénario alternatif:
-2b. L’utilisateur choisit de rechercher un service dans le menu.
-Le scénario reprend à l’étape 5
-Scénario alternatif:
-2c. L’utilisateur choisit de rechercher une cote dans la barre de recherche 
 
 ###III) Nos solutions :#
 <br>
@@ -63,7 +37,39 @@ Concernant le choix du système d'exploitation mobile, nous avons choisi de dév
 La barre de recherche permettra à l’utilisateur de rechercher une cote et d’accéder directement à l’affichage de sa position  sur le plan.
 Lors du choix d’une ou plusieurs disciplines, l’application affichera un plan détaillé contenant la (/les) section(s) demandée(s).
 
+#Manuel :#
+#Description textuelle d'un cas d'utilisation#
 
+Nom: Plan interactif BU 
+Acteur: Utilisateur
+Données d'entrée: Salle sélectionnés par un utilisateur
+Le cas d'utilisation commence lorsque l’utilisateur ouvre l’application
+
+Scénario principal:
+
+* 1. L’application affiche un plan général de la BU, propose de rechercher directement une cote dans la barre de recherche ou d’accéder à un menu.
+* 2. L’utilisateur choisit de chercher un livre par discipline dans le menu.
+* 3. L’application propose à l’utilisateur de sélectionner une sous-discipline parmi une liste rangée par discipline.
+
+* 4. L’utilisateur choisit une sous-discipline et valide.
+* 5. L’application affiche la zone sélectionnée sur la map.
+* 6. L’utilisateur choisit de tracer l’itinéraire pour y aller ou non.
+
+<br>
+Scénario d'erreur: Tracé d’itinéraire indisponible
+</br>
+* 6a. L’application affiche un message d'erreur
+Retour à l'étape 5.
+
+Scénario alternatif:
+* 2a. L’utilisateur choisit de chercher un livre par racine de cote dans le menu.
+Le scénario reprend à l'étape 5
+Scénario alternatif:
+* 2b. L’utilisateur choisit de rechercher un service dans le menu.
+Le scénario reprend à l’étape 5
+Scénario alternatif:
+* 2c. L’utilisateur choisit de rechercher une cote dans la barre de recherche 
+* 
 #Groupe m1c20152016-planibu : #
 * Leyla EL ATTAR
 * Pascal ORSINI
