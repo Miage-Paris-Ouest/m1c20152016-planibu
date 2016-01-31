@@ -1,4 +1,8 @@
 
+ 
+[![travis project](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-planibu.svg)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-planibu/)
+
+
 #Spécifications fonctionnelles  #
 
 ## Plan interactif de la BU (application mobile)#
