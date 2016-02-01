@@ -1,26 +1,52 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+@startuml
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
+Utilisateur "0..*" -- "1..*" Map : consulter
 
-class ArrayList {
-Object[] elementData
-size()
+ Salle"1..6"-- "1"Map : rechercher
+Salle "1"*-- "1..*" Etagére
+ Discipline"1..*"--* "1..*" Etagére
+
+Discipline "1"*-- "1..*"  SousDiscipline
+SousDiscipline"1..*"*-- "1..*" Livre
+Livre *--  Cote
+Cote *--  RacineDeCote
+
+class Map{
+nomMap:String
+plan:Map
+
+}
+class Salle {
+nomSalle:String
+niveau:Int
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class Etagére{
+numEtagere:Int
+}
+
+class Discipline{
+nomDisc:String
+}
+
+class SousDiscipline{
+nomSousDisc:String
+}
+
+class Livre {
+titre:String
+auteur:String
+}
+
+class Cote {
+numCote:Int
+}
+
+class RacineDeCote{
+indiceCote:Int
 }
 
 @enduml
