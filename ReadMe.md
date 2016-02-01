@@ -19,7 +19,7 @@ L’application sera livrée le Jeudi 25 Février avec une documentation précis
 <br>
 Voici un diagramme des principaux cas d’utilisations de plan interactif de BU Afin d’avoir un meilleur point de vue sur les principales fonctionnalités de l'application :
 </br>
-![Google logo](http://img11.hostingpics.net/pics/411028Diagrammedecasdutilisation.png "google logo")
+![Google logo](http://img15.hostingpics.net/pics/768554Diagrammedecasdutilisation.png "google logo")
 
 
 

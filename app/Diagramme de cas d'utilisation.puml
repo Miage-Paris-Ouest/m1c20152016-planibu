@@ -6,7 +6,7 @@ Utilisateur -up->(Rechercher un service )
 Utilisateur -down-> (Sélectionner un livre par une discipline )
 Utilisateur -right-> (Rechercher une cote )
 Utilisateur -right->(Sélectionner un livre par une racine de cote )
-(Sélectionner un livre par une discipline ) .> (Sélectionner un livre par sous-discipline) : extends
+(Sélectionner un livre par sous-discipline) .> (Sélectionner un livre par une discipline ) : extends
 
 
 
