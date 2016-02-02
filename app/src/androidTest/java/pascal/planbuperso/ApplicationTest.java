@@ -1,4 +1,4 @@
-package com.example.leys.m1c20152016_planibu;
+package pascal.planbuperso;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
