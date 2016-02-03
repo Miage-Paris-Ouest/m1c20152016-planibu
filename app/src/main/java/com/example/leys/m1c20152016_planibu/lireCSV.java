@@ -18,7 +18,7 @@ public class lireCSV {
         this.inputStream = inputStream;
     }
 
-    public List read(){
+   /* public List read(){
         List resultList = new ArrayList();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         try {
@@ -42,5 +42,5 @@ public class lireCSV {
             }
         }
         return resultList;
-    }
+    }*/
 }
