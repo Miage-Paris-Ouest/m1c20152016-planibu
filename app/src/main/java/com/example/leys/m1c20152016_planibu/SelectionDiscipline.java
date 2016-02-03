@@ -20,9 +20,6 @@ public class SelectionDiscipline extends AppCompatActivity {
         setContentView(R.layout.activity_selection_discipline);
 
 
-        //InputStream inputStream = getResources().openRawResource(R.raw.disciplines);
-        //lireCSV csvFile = new lireCSV(inputStream);
-        //List scoreList = csvFile.read();
 
 
 
