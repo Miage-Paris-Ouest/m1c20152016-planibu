@@ -1,6 +1,19 @@
 <resources>
-    <string name="app_name">m1c20152016-planibu</string>
+    <string name="app_name">PlanBUperso</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="action_settings">Settings</string>
+
+
+    <string-array name="nomDisciplines">
+        <item>Droit</item>
+        <item>Sciences Humaines</item>
+        <item>Economie</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
 </resources>

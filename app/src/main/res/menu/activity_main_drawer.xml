@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Rechercher une collection par :">
+            <menu>
+                <item
+                    android:id="@+id/selecDiscipline"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Discipline" />
+                <item
+                    android:id="@+id/selecSousDiscipline"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Sous discipline" />
+                <item
+                    android:id="@+id/rechercheCote"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Cote" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Services">
+        <menu>
+            <item
+                android:id="@+id/horaires"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Horaires" />
+        </menu>
+    </item>
+
+</menu>
