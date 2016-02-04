@@ -8,11 +8,6 @@
 
     <string name="accueil_titre">Bibliothèque Universitaire de Paris 10</string>
 
-    <string name="disciplinesSH_titre"> Sciences Humaines</string>
-    <string name="disciplinesSH_description"> Au 1er étage : ► archéologie, arts du spectacle, géographie, histoire, histoire de l art, philosophie, religion
-</string>
-
-
 
     <string-array name="nomDisciplines">
         <item>Droit</item>
@@ -49,6 +44,16 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
     <string name="disciplinesLit_titre">Langues et Littérature</string>
     <string name="disciplinesLit_description"> Au Premier étage: ►langues, lettres classiques,
         littérature française, littérature générale, linguistique
+</string>
+
+    <!-- PAGE SELECT DISCIPLINE SCIENCES HUMAINES -->
+    <string name="disciplinesSH_titre"> Sciences Humaines</string>
+    <string name="disciplinesSH_description"> Au 1er étage : ► archéologie, arts du spectacle, géographie, histoire, histoire de l art, philosophie, religion
+</string>
+
+    <!-- PAGE SELECT DISCIPLINE  SCIENCES SOCIALES  -->
+    <string name="disciplinesSS_titre"> Sciences Sociales</string>
+    <string name="disciplinesSS_description"> Au 1er étage : ►anthropologie, ethnologie, psychologie, éducation, sciences et médecine, sociologie, STAPS
 </string>
 
 </resources>
