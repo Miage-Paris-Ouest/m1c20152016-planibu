@@ -6,6 +6,7 @@
 
     <string name="action_settings">Settings</string>
 
+<<<<<<< HEAD
     <string name="horaires_titre">Nos Horaires</string>
     <string name="jours_semaine">Lundi au Vendredi</string>
     <string name="horaires_semaine">8h30 - 20h</string>
@@ -17,6 +18,9 @@
     <string name="disciplines_titre">Droit et Sciences Politique</string>
     <string name="disciplines_description"> Au rez-de-chaussée : ► Salle de Droit et Science politique : administration publique, droit public, droit privé, science politique
 </string>
+=======
+    <string name="accueil_titre">Bibliothèque Universitaire de Paris 10</string>
+>>>>>>> origin/master
 
     <string name="disciplinesSH_titre"> Sciences Humaines</string>
     <string name="disciplinesSH_description">
@@ -30,8 +34,36 @@ Au 1er étage : ► archéologie, arts du spectacle, géographie, histoire, hist
         <item>Sciences Humaines</item>
         <item>Economie</item>
     </string-array>
+
+
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
 
+    <!--PAGE HORAIRES ET ACCES-->
+    <string name="horaires_titre">Nos Horaires</string>
+    <string name="jours_semaine">Lundi au Vendredi</string>
+    <string name="horaires_semaine">8h30 - 20h</string>
+    <string name="horaires_img">img</string>
+    <string name="horaires_titre_acces">Accès</string>
+
+    <!-- PAGE SELECT DISCIPLINE DROIT -->
+    <string name="disciplinesDroit_titre">Droit et Sciences Politique</string>
+    <string name="disciplinesDroit_description"> Au rez-de-chaussée : ► Salle de Droit et Science p
+        olitique : administration publique, droit public, droit privé, science politique
+</string>
+
+    <!-- PAGE SELECT DISCIPLINE SCIENCES ECONOMIQUES -->
+    <string name="disciplinesEco_titre">Sciences Economiques</string>
+    <string name="disciplinesEco_description"> Au rez-de-chaussée : ►économie, mathématiques, infor
+        matique, généralités (préparation concours, orientation professionnelle)
+La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent également dans cette salle
+</string>
+
+
+    <!-- PAGE SELECT DISCIPLINE LANGUE ET LITTERATURE -->
+    <string name="disciplinesLit_titre">Langues et Littérature</string>
+    <string name="disciplinesLit_description"> Au Premier étage: ►langues, lettres classiques,
+        littérature française, littérature générale, linguistique
+</string>
 
 </resources>
