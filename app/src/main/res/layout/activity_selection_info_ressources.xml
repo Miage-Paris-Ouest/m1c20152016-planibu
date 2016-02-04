@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/infores_titre"
+        android:id="@+id/horaires_textView_noshoraires"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_weight="0.16"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/infores_titre2"
+        android:id="@+id/textView5"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="70dp"
+        android:text="@string/infores_desc2"
+        android:id="@+id/textView3"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/infores_titre3"
+        android:id="@+id/infores_textview_titre3"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="70dp"
+        android:text="@string/infores_desc3"
+        android:id="@+id/textView6"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/infores_titre4"
+        android:id="@+id/textView7"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infores_desc4"
+        android:id="@+id/infores_textview_desc4"
+        android:gravity="center_vertical"
+        android:layout_weight="0.66" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/infores_titre5"
+        android:id="@+id/infores_textview_titre5"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="70dp"
+        android:text="@string/infores_desc5"
+        android:id="@+id/infores_textview_desc5"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

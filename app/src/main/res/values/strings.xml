@@ -10,7 +10,7 @@
 
    <string name ="horaires_acces_desc">
         Bibliothèque Universitaire de Paris Ouest Nanterre La Défense
-        2 allée de lUniversité
+        2 allée de l\'Université
         92 001 Nanterre Cedex</string>
 
 
@@ -24,12 +24,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_main2">Main2Activity</string>
 
-    <!--PAGE HORAIRES ET ACCES-->
-    <string name="horaires_titre">Horaires</string>
-    <string name="jours_semaine">Lundi au Vendredi : 8h30 -20h</string>
-    <string name="jours_weekend">Samedi : 10h - 18h</string>
-    <string name="horaires_img">img</string>
-    <string name="horaires_titre_acces">Accès</string>
+
 
     <!-- PAGE SELECT DISCIPLINE DROIT -->
     <string name="disciplinesDroit_titre">Droit et Sciences Politique</string>
@@ -60,5 +55,34 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
     <string name="disciplinesSS_titre"> Sciences Sociales</string>
     <string name="disciplinesSS_description"> Au 1er étage : ►anthropologie, ethnologie, psychologie, éducation, sciences et médecine, sociologie, STAPS
 </string>
+
+    <!--PAGE HORAIRES ET ACCES-->
+    <string name="horaires_titre">Horaires</string>
+    <string name="jours_semaine">Lundi au Vendredi : 8h30 -20h</string>
+    <string name="jours_weekend">Samedi : 10h - 18h</string>
+    <string name="horaires_img">img</string>
+    <string name="horaires_titre_acces">Accès</string>
+
+    <!--PAGE INFO RESSOURCES-->
+    <string name ="infores_titre">Informations Ressources</string>
+
+    <string name="infores_titre2">Les livres</string>
+    <string name="infores_desc2">450 000 ouvrages dont 80 % en salle de lecture. </string>
+
+    <string name="infores_titre3">Les périodiques</string>
+    <string name="infores_desc3">► 1 294 abonnements de journaux et magazines, de revues multidisciplinaire à consulter sur place.
+► 45 000 titres en ligne.</string>
+
+    <string name="infores_titre4">Les thèses</string>
+    <string name="infores_desc4">► 450 thèses électroniques consultables.
+► 4 500 thèses imprimées à réserver en ligne.
+► Près de 3000 thèses imprimées réservables après consultation sur place).
+► 70 000 thèses soutenues dans d\'autres universités consultables sur microfiches.</string>
+
+    <string name="infores_titre5">La vidéothèque</string>
+    <string name="infores_desc5">5 888 DVD et 4 360 VHS de films de fiction ou de documentaires à consulter ou à emprunter.</string>
+
+
+    <!--PAGE CONTACT-->
 
 </resources>

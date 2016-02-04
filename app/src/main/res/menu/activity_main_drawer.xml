@@ -20,20 +20,23 @@
         </item>
     </group>
 
-    <item android:title="Infos">
+    <item android:title="Informations complémentaires">
         <menu>
             <item
                 android:id="@+id/horaires"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Horaires et accès" />
-            <item
-                android:id="@+id/contact"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Contact" />
+
             <item
                 android:id="@+id/inforessources"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_manage"
                 android:title="Info ressources" />
+
+            <item
+                android:id="@+id/contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact" />
+
         </menu>
     </item>
 

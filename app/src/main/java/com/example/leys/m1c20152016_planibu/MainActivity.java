@@ -64,8 +64,15 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.horaires) {
             Intent intent = new Intent(MainActivity.this, SelectionHoraires.class);
             startActivity(intent);
+        }
 
-
+        else if (id == R.id.inforessources) {
+         /*   Intent intent = new Intent(MainActivity.this, SelectionInfoRessources.class);
+            startActivity(intent);*/
+        }
+        else if (id == R.id.contact) {
+           /* Intent intent = new Intent(MainActivity.this, SelectionContact.class);
+            startActivity(intent);*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
