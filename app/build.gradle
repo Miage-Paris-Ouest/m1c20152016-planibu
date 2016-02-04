@@ -1,14 +1,26 @@
 apply plugin: 'com.android.application'
 
 android {
+    //le numéro de version d’android sdk utilisée pour compiler le projet
     compileSdkVersion 23
+
+    //nom complet de la version d’android sdk utilisée pour compiler le projet
     buildToolsVersion "23.0.2"
 
     defaultConfig {
+        //identifiant unique de l’application (son nom de package complet)
         applicationId "com.example.leys.m1c20152016_planibu"
+
+        //version minimum d’android supporté
         minSdkVersion 15
+
+        //version d’android pour laquelle l’application a été compilée
         targetSdkVersion 23
+
+        // numéro de version
         versionCode 1
+
+        //nom complet de la version
         versionName "1.0"
     }
 	lintOptions {
