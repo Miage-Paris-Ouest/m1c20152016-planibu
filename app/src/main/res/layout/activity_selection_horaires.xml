@@ -64,7 +64,8 @@
         android:contentDescription="@string/horaires_img"
         android:layout_below="@+id/horaires_textView_noshoraires"
         android:layout_alignRight="@+id/tableLayout"
-        android:layout_alignEnd="@+id/tableLayout" />
+        android:layout_alignEnd="@+id/tableLayout"
+        android:clickable="false" />
 
     <ScrollView
         android:layout_width="wrap_content"
