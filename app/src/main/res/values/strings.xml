@@ -6,27 +6,12 @@
 
     <string name="action_settings">Settings</string>
 
-<<<<<<< HEAD
-    <string name="horaires_titre">Nos Horaires</string>
-    <string name="jours_semaine">Lundi au Vendredi</string>
-    <string name="horaires_semaine">8h30 - 20h</string>
-    <string name="horaires_img">img</string>
-
-
-
-
-    <string name="disciplines_titre">Droit et Sciences Politique</string>
-    <string name="disciplines_description"> Au rez-de-chaussée : ► Salle de Droit et Science politique : administration publique, droit public, droit privé, science politique
-</string>
-=======
     <string name="accueil_titre">Bibliothèque Universitaire de Paris 10</string>
->>>>>>> origin/master
 
     <string name="disciplinesSH_titre"> Sciences Humaines</string>
-    <string name="disciplinesSH_description">
-Au 1er étage : ► archéologie, arts du spectacle, géographie, histoire, histoire de l'art, philosophie, religion
+    <string name="disciplinesSH_description"> Au 1er étage : ► archéologie, arts du spectacle, géographie, histoire, histoire de l art, philosophie, religion
 </string>
-    <string name="plansh_img">img</string>
+
 
 
     <string-array name="nomDisciplines">

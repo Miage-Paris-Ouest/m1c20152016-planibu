@@ -4,27 +4,29 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="321dp"
+        android:layout_width="396dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/disciplinesSH_titre"
         android:id="@+id/sh_textView_disc_titre"
-        android:layout_weight="0.03" />
+        android:layout_weight="0.12"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/disciplinesSH_description"
         android:id="@+id/sh_textView_disc"
-        android:layout_weight="0.21" />
+        android:layout_weight="0.21"
+        android:gravity="center_vertical|center_horizontal" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:id="@+id/imageView3"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.86"
         android:contentDescription=""
-        android:src="@string\plansh_img" />
+        android:src="@drawable/plansh" />
 
 </LinearLayout>
