@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="348dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/disciplinesEco_titre"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="101dp"
+        android:id="@+id/disciplineDroit_textView_description"
+        android:layout_gravity="center_vertical"
+        android:typeface="serif"
+        android:text="@string/disciplinesEco_description"
+        android:gravity="center_vertical|center_horizontal" />
+    <ImageView
+        android:layout_width="246dp"
+        android:layout_height="333dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/plandroit" />
 
 </LinearLayout>

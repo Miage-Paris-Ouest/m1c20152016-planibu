@@ -5,19 +5,29 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="305dp"
+        android:layout_width="368dp"
         android:layout_height="45dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/disciplines_titre"
+        android:text="@string/disciplinesDroit_titre"
         android:id="@+id/textView2"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_weight="0.29"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
         android:layout_width="367dp"
-        android:layout_height="129dp"
+        android:layout_height="88dp"
         android:id="@+id/disciplineDroit_textView_description"
         android:layout_gravity="center_vertical"
         android:typeface="serif"
-        android:text="@string/disciplines_description" />
+        android:text="@string/disciplinesDroit_description"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="245dp"
+        android:layout_height="303dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/plandroit"
+        android:layout_weight="0.49" />
 
 </LinearLayout>
