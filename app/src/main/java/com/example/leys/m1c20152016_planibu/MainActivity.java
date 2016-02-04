@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -65,6 +62,8 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.horaires) {
+            Intent intent = new Intent(MainActivity.this, SelectionHoraires.class);
+            startActivity(intent);
 
 
         }

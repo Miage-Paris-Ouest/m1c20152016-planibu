@@ -18,8 +18,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectionDiscipline" />
-        <activity android:name=".lireCSV" />
+       <!-- <activity android:name=".lireCSV" /> -->
         <activity android:name=".SelectionSousDiscipline"></activity>
+
+        <activity android:name=".SelectionDisciplineDroit"></activity>
+        <activity android:name=".SelectionDisciplineEco"></activity>
+        <activity android:name=".SelectionDisciplineSH"></activity>
+        <activity android:name=".SelectionDisciplineBulle"></activity>
+        <activity android:name=".SelectionDisciplineSociale"></activity>
+        <activity android:name=".SelectionDisciplineLitterature"></activity>
+
+        <activity android:name=".SelectionHoraires"></activity>
+
     </application>
 
 </manifest>

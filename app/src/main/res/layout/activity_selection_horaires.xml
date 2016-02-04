@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pascal.planbuperso.SelectionSousDiscipline"
+    >
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/clock"
+        android:layout_below="@+id/horaires_textView_noshoraires"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/horaires_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/horaires_titre"
+        android:id="@+id/horaires_textView_noshoraires"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/jours_semaine"
+                android:id="@+id/disciplineDroit_textView_description"
+                android:layout_column="2"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/horaires_semaine"
+                android:id="@+id/textView"
+                android:layout_column="8"
+                android:layout_weight="0.44" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="44dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Samedi"
+                android:id="@+id/horaires_textView_we"
+                android:layout_column="2"
+                android:layout_alignTop="@+id/horaires_textView_hwe"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:layout_row="1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="10h-18h"
+                android:id="@+id/horaires_textView_hwe"
+                android:layout_column="8"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/horaires_textView_noshoraires"
+                android:layout_toEndOf="@+id/horaires_textView_noshoraires"
+                android:layout_weight="0.44"
+                android:layout_row="1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
