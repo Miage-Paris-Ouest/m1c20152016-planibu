@@ -21,18 +21,20 @@
         </activity>
 
 
-        <activity android:name=".SelectionDiscipline" />
-       <!-- <activity android:name=".lireCSV" /> -->
-        <activity android:name=".SelectionSousDiscipline"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.SelectionParDiscipline" />
+       <class android:name=".menu_principal_choix.recherche_cote.lireCSV" />
+        <activity android:name=".menu_principal_choix.SelectionParSousDiscipline"></activity>
 
-        <activity android:name=".SelectionDisciplineDroit"></activity>
-        <activity android:name=".SelectionDisciplineEco"></activity>
-        <activity android:name=".SelectionDisciplineSH"></activity>
-        <activity android:name=".SelectionDisciplineBulle"></activity>
-        <activity android:name=".SelectionDisciplineSociale"></activity>
-        <activity android:name=".SelectionDisciplineLitterature"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.salle_droit.SelectionSalleDroit"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.salle_eco.SelectionSalleEco"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.salle_sh.SelectionSalleSH"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.salle_bulle.SelectionSalleBulle"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.salle_ss.SelectionSalleSociale"></activity>
+        <activity android:name=".menu_principal_choix.selection_par_discipline.salle_litterature.SelectionSalleLitterature"></activity>
 
-        <activity android:name=".SelectionHoraires"></activity>
+        <activity android:name=".menu_principal_choix.SelectionHoraires"></activity>
+        <activity android:name=".menu_principal_choix.SelectionContact"></activity>
+        <activity android:name=".menu_principal_choix.SelectionInfoRessources"></activity>
 
     </application>
 

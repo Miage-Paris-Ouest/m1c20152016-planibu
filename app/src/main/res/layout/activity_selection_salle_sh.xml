@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="69dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/disciplinesSH_titre"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <!--  android:id="@android:id/list"  pour créer une listFragment-->
+        <ListView
+            android:layout_width="187dp"
+            android:layout_height="399dp"
+            android:id="@+id/salleSH_listview"
+            android:layout_gravity="right|top"
+            android:foregroundGravity="center_vertical|center_horizontal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/salledroit_fragment_layout_img">
+
+            <!--  avec un listFragment on mettra android:id="@android:id/empty"  pour afficher cette image uniquement si aucun item selectione-->
+            <ImageView
+                android:layout_width="163dp"
+                android:layout_height="406dp"
+                android:id="@+id/salleEco_img"
+                android:src="@drawable/plansh"
+                android:layout_gravity="center"
+                android:contentDescription="@string/planbu" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -10,6 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContact;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionInfoRessources;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.SelectionParDiscipline;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionParSousDiscipline;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -49,30 +55,29 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.selecDiscipline) {
-            Intent intent = new Intent(MainActivity.this, SelectionDiscipline.class);
+            Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
             startActivity(intent);
 
         }
 
         else if (id == R.id.selecSousDiscipline) {
-            Intent intent = new Intent(MainActivity.this, SelectionSousDiscipline.class);
+            Intent intent = new Intent(MainActivity.this, SelectionParSousDiscipline.class);
             startActivity(intent);
 
-        } else if (id == R.id.rechercheCote) {
+        } else {
+            if (id == R.id.selectCote) {
 
 
-        } else if (id == R.id.horaires) {
-            Intent intent = new Intent(MainActivity.this, SelectionHoraires.class);
-            startActivity(intent);
-        }
-
-        else if (id == R.id.inforessources) {
-         /*   Intent intent = new Intent(MainActivity.this, SelectionInfoRessources.class);
-            startActivity(intent);*/
-        }
-        else if (id == R.id.contact) {
-           /* Intent intent = new Intent(MainActivity.this, SelectionContact.class);
-            startActivity(intent);*/
+            } else if (id == R.id.horaires) {
+                Intent intent = new Intent(MainActivity.this, SelectionHoraires.class);
+                startActivity(intent);
+            } else if (id == R.id.inforessources) {
+                Intent intent = new Intent(MainActivity.this, SelectionInfoRessources.class);
+                startActivity(intent);
+            } else if (id == R.id.contact) {
+                Intent intent = new Intent(MainActivity.this, SelectionContact.class);
+                startActivity(intent);
+            }
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

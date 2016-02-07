@@ -27,13 +27,13 @@
 
 
     <!-- PAGE SELECT DISCIPLINE DROIT -->
-    <string name="disciplinesDroit_titre">Droit et Sciences Politique</string>
+    <string name="disciplinesDroit_titre">Salle Droit et ScPo </string>
     <string name="disciplinesDroit_description"> Au rez-de-chaussée : ► Salle de Droit et Science p
         olitique : administration publique, droit public, droit privé, science politique
 </string>
 
     <!-- PAGE SELECT DISCIPLINE SCIENCES ECONOMIQUES -->
-    <string name="disciplinesEco_titre">Sciences Economiques</string>
+    <string name="disciplinesEco_titre">Salle Sciences Economiques</string>
     <string name="disciplinesEco_description"> Au rez-de-chaussée : ►économie, mathématiques, infor
         matique, généralités (préparation concours, orientation professionnelle)
 La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent également dans cette salle
@@ -41,24 +41,24 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
 
 
     <!-- PAGE SELECT DISCIPLINE LANGUE ET LITTERATURE -->
-    <string name="disciplinesLit_titre">Langues et Littérature</string>
+    <string name="disciplinesLit_titre">Salle Langues et Littérature</string>
     <string name="disciplinesLit_description"> Au Premier étage: ►langues, lettres classiques,
         littérature française, littérature générale, linguistique
 </string>
 
     <!-- PAGE SELECT DISCIPLINE SCIENCES HUMAINES -->
-    <string name="disciplinesSH_titre"> Sciences Humaines</string>
+    <string name="disciplinesSH_titre">Salle Sciences Humaines</string>
     <string name="disciplinesSH_description"> Au 1er étage : ► archéologie, arts du spectacle, géographie, histoire, histoire de l art, philosophie, religion
 </string>
 
     <!-- PAGE SELECT DISCIPLINE  SCIENCES SOCIALES  -->
-    <string name="disciplinesSS_titre"> Sciences Sociales</string>
+    <string name="disciplinesSS_titre"> Salle Sciences Sociales</string>
     <string name="disciplinesSS_description"> Au 1er étage : ►anthropologie, ethnologie, psychologie, éducation, sciences et médecine, sociologie, STAPS
 </string>
 
     <!--PAGE HORAIRES ET ACCES-->
     <string name="horaires_titre">Horaires</string>
-    <string name="jours_semaine">Lundi au Vendredi : 8h30 -20h</string>
+    <string name="jours_semaine">Lundi au Vendredi : 8h30 – 20h</string>
     <string name="jours_weekend">Samedi : 10h - 18h</string>
     <string name="horaires_img">img</string>
     <string name="horaires_titre_acces">Accès</string>
@@ -66,21 +66,23 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
     <!--PAGE INFO RESSOURCES-->
     <string name ="infores_titre">Informations Ressources</string>
 
-    <string name="infores_titre2">Les livres</string>
-    <string name="infores_desc2">450 000 ouvrages dont 80 % en salle de lecture. </string>
+    <string name="infores_titre2">Des livres</string>
+    <string name="infores_desc2">en salle de lecture. </string>
 
-    <string name="infores_titre3">Les périodiques</string>
-    <string name="infores_desc3">► 1 294 abonnements de journaux et magazines, de revues multidisciplinaire à consulter sur place.
-► 45 000 titres en ligne.</string>
+    <string name="infores_titre3">Des périodiques</string>
+    <string name="infores_desc3">a consulter:  sur place   en ligne </string>
 
-    <string name="infores_titre4">Les thèses</string>
-    <string name="infores_desc4">► 450 thèses électroniques consultables.
-► 4 500 thèses imprimées à réserver en ligne.
-► Près de 3000 thèses imprimées réservables après consultation sur place).
-► 70 000 thèses soutenues dans d\'autres universités consultables sur microfiches.</string>
+    <string name="infores_titre4">Des theses</string>
+    <string name="infores_desc4">consultables au format:  electronique   imprim   microfiche</string>
 
     <string name="infores_titre5">La vidéothèque</string>
-    <string name="infores_desc5">5 888 DVD et 4 360 VHS de films de fiction ou de documentaires à consulter ou à emprunter.</string>
+    <string name="infores_desc5">  à consulter ou à emprunter: DVD  VHS de films de fiction ou de documentaires</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="planbu">planbu</string>
+    <string name="imgdroit">imgdroit</string>
+    <string name="imgscpo">imgscpo</string>
+    <string name="imgplandroit">imgplandroit</string>
 
 
     <!--PAGE CONTACT-->

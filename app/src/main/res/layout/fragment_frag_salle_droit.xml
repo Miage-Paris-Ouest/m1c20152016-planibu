@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_droit.FragSalleDroit">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="163dp"
+        android:layout_height="406dp"
+        android:id="@+id/imgplandroit"
+        android:src="@drawable/plandroit"
+        android:layout_gravity="center"
+        android:contentDescription="@string/imgplandroit" />
+</FrameLayout>

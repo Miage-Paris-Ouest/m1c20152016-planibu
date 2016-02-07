@@ -1,9 +1,11 @@
-package com.example.leys.m1c20152016_planibu;
+package com.example.leys.m1c20152016_planibu.menu_principal_choix;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SelectionSousDiscipline extends AppCompatActivity {
+import com.example.leys.m1c20152016_planibu.R;
+
+public class SelectionParSousDiscipline extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
