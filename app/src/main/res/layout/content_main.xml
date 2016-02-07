@@ -10,6 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.leys.m1c20152016_planibu.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:background="@drawable/backgroundbup10">
+    android:background="@drawable/backgroundbup_10">
 
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/buplanvif"
+        android:layout_marginTop="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
