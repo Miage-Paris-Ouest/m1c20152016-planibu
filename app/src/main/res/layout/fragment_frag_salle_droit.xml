@@ -3,7 +3,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_droit.FragSalleDroit">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <ImageView
         android:layout_width="163dp"

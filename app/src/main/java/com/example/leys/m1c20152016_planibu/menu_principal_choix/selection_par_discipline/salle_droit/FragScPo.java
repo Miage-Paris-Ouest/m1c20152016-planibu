@@ -21,10 +21,9 @@ import com.example.leys.m1c20152016_planibu.R;
 public class FragScPo extends Fragment {
     private OnFragmentInteractionListener mListener;
 
-    // TODO: Rename and change types and number of parameters
     public static FragScPo newInstance() {
-        FragScPo fragment = new FragScPo();
-        return fragment;
+        FragScPo fragScPo = new FragScPo();
+        return fragScPo;
     }
 
     public FragScPo() {
@@ -43,7 +42,6 @@ public class FragScPo extends Fragment {
         return inflater.inflate(R.layout.fragment_frag_sc_po, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -74,7 +72,6 @@ public class FragScPo extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
 

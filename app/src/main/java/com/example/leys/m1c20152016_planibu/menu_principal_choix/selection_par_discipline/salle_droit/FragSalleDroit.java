@@ -23,10 +23,9 @@ public class FragSalleDroit extends ListFragment {
     private OnFragmentInteractionListener mListener;
 
 
-    // TODO: Rename and change types and number of parameters
     public static FragSalleDroit newInstance() {
-        FragSalleDroit fragment = new FragSalleDroit();
-        return fragment;
+        FragSalleDroit fragSalleDroit = new FragSalleDroit();
+        return fragSalleDroit;
     }
 
     public FragSalleDroit() {
@@ -45,7 +44,6 @@ public class FragSalleDroit extends ListFragment {
         return inflater.inflate(R.layout.fragment_frag_salle_droit, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -76,7 +74,6 @@ public class FragSalleDroit extends ListFragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
 

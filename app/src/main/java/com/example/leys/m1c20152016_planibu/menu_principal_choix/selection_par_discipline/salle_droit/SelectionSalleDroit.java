@@ -5,9 +5,13 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.example.leys.m1c20152016_planibu.R;
@@ -15,6 +19,7 @@ import com.example.leys.m1c20152016_planibu.R;
 public class SelectionSalleDroit extends AppCompatActivity {
     ListView lvDisciplinesDroit;
     ArrayAdapter<String> adapter;
+    FrameLayout frameLayout;
     Fragment fragDroit;
     Fragment fragScPo;
     Fragment fragSalleDroit;
@@ -32,8 +37,48 @@ public class SelectionSalleDroit extends AppCompatActivity {
         final String[] tabDisciplinesDeDroit = {"Droit", "Sciences Politiques"};
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, tabDisciplinesDeDroit);
         lvDisciplinesDroit.setAdapter(adapter);
+/*
+        //TEST SWITCH BUTTON DISCIPLINE
 
-        /*
+        final Button myFrag = (Button) findViewById(R.id.salleDroit_button_fragment);
+        frameLayout = (FrameLayout) findViewById(R.id.salledroit_fragment_layout_img);
+
+        fragSalleDroit = new FragSalleDroit();
+        fragDroit = new FragDroit();
+        fragScPo = new FragScPo();
+
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.salledroit_fragment_layout_img, fragSalleDroit);
+        cpt++;
+        ft.commit();
+
+        myFrag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+
+                switch (cpt) {
+                    case 0:
+                        ft.replace(R.id.salledroit_fragment_layout_img, fragDroit);
+                        cpt++;
+                        break;
+                    case 1:
+                        ft.replace(R.id.salledroit_fragment_layout_img, fragScPo);
+                        cpt = 0;
+                        break;
+
+                }
+                ft.commit();
+            }
+
+        });
+
+        */
+
+        /* //TEST POUR SWITCHER AVEC LA LISTE
         fragSalleDroit = new FragSalleDroit();
         fragDroit = new FragDroit();
         fragScPo = new FragScPo();
@@ -80,5 +125,8 @@ public class SelectionSalleDroit extends AppCompatActivity {
        }
     */
 
+
     }
 }
+
+

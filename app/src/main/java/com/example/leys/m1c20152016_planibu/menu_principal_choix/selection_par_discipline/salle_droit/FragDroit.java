@@ -22,10 +22,9 @@ public class FragDroit extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    // TODO: Rename and change types and number of parameters
     public static FragDroit newInstance() {
-        FragDroit fragment = new FragDroit();
-        return fragment;
+        FragDroit fragDroit = new FragDroit();
+        return fragDroit;
     }
 
     public FragDroit() {
@@ -44,7 +43,6 @@ public class FragDroit extends Fragment {
         return inflater.inflate(R.layout.fragment_frag_droit, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -75,7 +73,6 @@ public class FragDroit extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
 

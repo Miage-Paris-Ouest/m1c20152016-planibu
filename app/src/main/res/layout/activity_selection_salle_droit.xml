@@ -40,7 +40,7 @@
                 android:layout_height="406dp"
                 android:id="@+id/salleDroit_img"
                 android:src="@drawable/plandroit"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal|top"
                 android:contentDescription="@string/planbu" />
 
         </FrameLayout>
