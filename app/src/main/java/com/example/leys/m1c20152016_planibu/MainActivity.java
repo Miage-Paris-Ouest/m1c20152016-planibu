@@ -20,12 +20,14 @@ import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContac
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionInfoRessources;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.CsvResultActivity;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.resultatCote;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.SelectionParDiscipline;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionParSousDiscipline;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    String recherche;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,16 +45,20 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         SearchView search=(SearchView) findViewById(R.id.searchView2);
-        search.setQueryHint("SearchView");
+        search.setQueryHint("Recherche par côte");
 
 
-
-        //*** setOnQueryTextListener ***
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
+                Intent intent = new Intent(MainActivity.this, resultatCote.class);
+                Bundle extras = new Bundle();
+
+                recherche = query;
+
+                extras.putString("recherche", recherche);
+                intent.putExtras(extras);
                 startActivity(intent);
 
 
@@ -61,9 +67,7 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                // TODO Auto-generated method stub
 
-                //	Toast.makeText(getBaseContext(), newText,
                 return false;
             }
         });
