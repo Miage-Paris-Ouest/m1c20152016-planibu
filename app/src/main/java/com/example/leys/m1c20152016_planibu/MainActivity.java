@@ -1,5 +1,8 @@
 package com.example.leys.m1c20152016_planibu;
 
+import android.app.SearchManager;
+import android.app.SearchableInfo;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -9,6 +12,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContact;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
@@ -36,7 +42,36 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        SearchView search=(SearchView) findViewById(R.id.searchView2);
+        search.setQueryHint("SearchView");
+
+
+
+        //*** setOnQueryTextListener ***
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
+                startActivity(intent);
+
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // TODO Auto-generated method stub
+
+                //	Toast.makeText(getBaseContext(), newText,
+                return false;
+            }
+        });
     }
+
+
+
+
 
     @Override
     public void onBackPressed() {
@@ -47,6 +82,10 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
+
+
+
 
 
     @SuppressWarnings("StatementWithEmptyBody")
