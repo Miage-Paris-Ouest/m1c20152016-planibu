@@ -26,7 +26,7 @@ public class CsvResultActivity extends AppCompatActivity {
         listView.setAdapter(itemArrayAdapter);
         listView.onRestoreInstanceState(state);
 
-          InputStream inputStream = getResources().openRawResource(R.raw.databu_shs);
+        InputStream inputStream = getResources().openRawResource(R.raw.databu_shs);
         CSVReader csv = new CSVReader(inputStream);
         List<String[]> scoreList = csv.read();
 
@@ -35,3 +35,6 @@ public class CsvResultActivity extends AppCompatActivity {
         }
     }
 }
+
+//Read the file line by line with a BufferedReader wrapped around a FileReader.
+// Stop when you hit a line that startsWith the thing you're looking for. Close the reader and return the line.

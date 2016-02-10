@@ -5,10 +5,17 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.leys.m1c20152016_planibu.R;
+import com.example.leys.m1c20152016_planibu.lireCSV;
+
+import java.io.InputStream;
+import java.util.List;
 
 public class resultatCote extends AppCompatActivity {
 
     String recherche;
+    String salle;
+    String etagere;
+    String autre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +27,21 @@ public class resultatCote extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         recherche = extras.getString("recherche");
 
-        tv.setText(recherche);
+
+        InputStream inputStream = getResources().openRawResource(R.raw.databu_shs);
+        lireCSV csvFile = new lireCSV(inputStream);
+        List <String> scoreList = csvFile.read();
+
+        for (String s : scoreList) {
+            if (s.contains(recherche)) {
+                tv.setText(s);
+            }
 
 
+
+
+
+
+        }
     }
 }
