@@ -24,6 +24,8 @@
         <activity android:name=".menu_principal_choix.selection_par_discipline.SelectionParDiscipline" />
        <class android:name=".menu_principal_choix.recherche_cote.lireCSV" />
         <activity android:name=".menu_principal_choix.SelectionParSousDiscipline"></activity>
+        <activity android:name=".menu_principal_choix.recherche_cote.CsvResultActivity"></activity>
+
 
         <activity android:name=".menu_principal_choix.selection_par_discipline.salle_droit.SelectionSalleDroit"></activity>
         <activity android:name=".menu_principal_choix.selection_par_discipline.salle_eco.SelectionSalleEco"></activity>

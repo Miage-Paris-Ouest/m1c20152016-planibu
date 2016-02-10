@@ -1,0 +1,84 @@
+Salle;Etagère(s);Secteur / discipline;Sous-discipline;"Cotes : ""commencent par"""
+Sciences Humaines;28,29,30,31,32,33,34,35,36,37;Philosophie;Philosophie - Généralités / Philosophes ;1 sauf 10 à 17
+Sciences Humaines;38;Philosophie;Domaines, méthodes de la philosophie ;101
+Sciences Humaines;38;Philosophie;Métaphysique ;11 sauf 111, 113, 115
+Sciences Humaines;38;Philosophie;Ontologie ;111
+Sciences Humaines;38;Philosophie;Philisophie de la nature ;113
+Sciences Humaines;38;Philosophie;Philisophie du temps;115
+Sciences Humaines;38;Philosophie;Causalité ;122
+Sciences Humaines;38;Philosophie;Liberté ;123
+Sciences Humaines;39;Philosophie;Philosophie de la valeur ;124
+Sciences Humaines;39;Philosophie;Vie et mort ;128
+Sciences Humaines;39;Philosophie;Philosophie de l’esprit, de l’action, politique, de la culture ;13
+Sciences Humaines;39;Philosophie;Systèmes philosophiques ;141
+Sciences Humaines;39,40;Philosophie;Logique ;16
+Sciences Humaines;40;Philosophie;Morale ;17
+Sciences Humaines;57;Religion;Religion - Généralités ;2 sauf 21 à 29
+Sciences Humaines;57;Religion;Philosophie et théorie de la religion ;21
+Sciences Humaines;57,58;Religion;Bible;22
+Sciences Humaines;58;Religion;Théologie dogmatique;23
+Sciences Humaines;58;Religion;Théologie morale ;24
+Sciences Humaines;58;Religion;Théologie pastorale ;25
+Sciences Humaines;58,59;Religion;Eglise chrétienne ;26
+Sciences Humaines;59,60,61,62;Religion;Histoire générale de l’Eglise chrétienne ;27
+Sciences Humaines;62,63;Religion;Différentes églises chrétiennes ;28
+Sciences Humaines;63;Religion;Religions non chrétiennes - généralités ;29 sauf 292,294,296 , 297 et 299
+Sciences Humaines;62;Religion;Religion des Grecs et des Romains ;292
+Sciences Humaines;63;Religion;Hindouisme, Bouddhisme ;294
+Sciences Humaines;64;Religion;Judaïsme ;296
+Sciences Humaines;64;Religion;Islam ;297
+Sciences Humaines;64;Religion;Autres religions ;299
+Sciences Humaines;44,45,46;Beaux-Arts;Art en général ;7 sauf 71, 72, 73, 74, 75, 76, 77, 78, 79
+Sciences Humaines;46;Urbanisme;Urbanisme ;71 sauf 712
+Sciences Humaines;46;Beaux-Arts;Art des jardins ;712
+Sciences Humaines;47;Beaux-Arts;Architecture ;72
+Sciences Humaines;48;Beaux-Arts;Sculpture et arts apparentés;73
+Sciences Humaines;48;Beaux-Arts;Dessin et métiers d’art ;74
+Sciences Humaines;49,50,51;Beaux-Arts;Peinture ;75 sauf 753, 755, 757, 758
+Sciences Humaines;51;Beaux-Arts;Genres picturaux;753 à 758
+Sciences Humaines;51;Beaux-Arts;Arts graphiques ;76
+Sciences Humaines;52;Beaux-Arts;Photographie ;77
+Sciences Humaines;52;Arts du spectacle;Musique ;78 sauf 781 à 789
+Sciences Humaines;53;Arts du spectacle;Genres musicaux ;781 à 789
+Sciences Humaines;53,54;Arts du spectacle;Théâtre ;792
+Sciences Humaines;01;Histoire;Histoire - dictionnaires ;9(03)
+Sciences Humaines;02;Histoire;Archéologie ;902
+Sciences Humaines;02;Histoire;Préhistoire ;903
+Sciences Humaines;65;Géographie;Géographie - Généralités ;91 sauf 910,911,912, 913 à 919
+Sciences Humaines;65;Géographie;Géographie - Questions générales ;910
+Sciences Humaines;66,67,68;Géographie;Géographie générale ;911
+Sciences Humaines;71;Géographie;Atlas ;912
+Sciences Humaines;68;Géographie;Géographie universelle ;913
+Sciences Humaines;68,69,70;Géographie;Géographie de l’Europe ;914
+Sciences Humaines;70;Géographie;Géographie de l’Asie ;915
+Sciences Humaines;70;Géographie;Géographie de l’Afrique ;916
+Sciences Humaines;71;Géographie;Géographie de l’Amérique du Nord et centrale ;917
+Sciences Humaines;71;Géographie;Géographie de l’Amérique du Sud ;918
+Sciences Humaines;71;Géographie;Océanie, régions arctiques et antarctiques ;919
+Sciences Humaines;02;Histoire;Généalogie – Héraldique ;929
+Sciences Humaines;02,03;Histoire;Sciences auxiliaires de l’histoire ;930
+Sciences Humaines;03,04;Histoire;Histoire ancienne ;931
+Sciences Humaines;04;Histoire;Histoire de l’Egypte ancienne ;932
+Sciences Humaines;04;Histoire;Histoire de la Judée, histoire de l'Inde ancienne, histoire de Babylone, histoire des pays barbares;93 sauf 937 à 939
+Sciences Humaines;04,05;Histoire;Histoire romaine ;937
+Sciences Humaines;05;Histoire;Histoire grecque ;938
+Sciences Humaines;05,06;Histoire;Histoire ancienne de la Méditerranée et de  l’Asie ;939
+Sciences Humaines;06,07;Histoire;Histoire générale ;94 sauf 940 à 949
+Sciences Humaines;07,08,09,10;Histoire;Histoire de l’Europe ;940
+Sciences Humaines;10,11;Histoire;Histoire de l’Écosse - Irlande ;941
+Sciences Humaines;11,12;Histoire;Histoire de l’Angleterre ;942
+Sciences Humaines;12,13;Histoire;Histoire de l’Allemagne ;943
+Sciences Humaines;13,14,15,16,17,18,19,20;Histoire;Histoire de France ;944
+Sciences Humaines;20,21;Histoire;Histoire de l’Italie ;945
+Sciences Humaines;21,22;Histoire;Histoire de la Péninsule ibérique ;946
+Sciences Humaines;22;Histoire;Histoire de la Russie ;947
+Sciences Humaines;22,23;Histoire;Histoire de l’Europe du Nord ;948 à 949.4
+Sciences Humaines;23;Histoire;"Histoire de l’Europe du Sud-Est ; Méditerranée orientale ";949.5 à 949.9
+Sciences Humaines;23,24;Histoire;Histoire de l’Asie ;95
+Sciences Humaines;24,25;Histoire;Histoire de l’Afrique ;96
+Sciences Humaines;25;Histoire;Histoire du Continent américain ;970 à 972
+Sciences Humaines;25,26;Histoire;Histoire des Etats Unis ;973
+Sciences Humaines;26,27;Histoire;Histoire de l’Amérique Latine ;980
+Sciences Humaines;27;Histoire;Histoire de l’Amérique du Sud ;981 à 989
+Sciences Humaines;27;Histoire;Histoire de l’Océanie ;990
+Sciences Humaines;27;Histoire;Histoire de l’Australie ;994

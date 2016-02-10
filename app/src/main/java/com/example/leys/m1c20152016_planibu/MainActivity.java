@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContact;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionInfoRessources;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.CsvResultActivity;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.SelectionParDiscipline;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionParSousDiscipline;
 
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity
 
         } else {
             if (id == R.id.selectCote) {
+                Intent intent = new Intent(MainActivity.this, CsvResultActivity.class);
+                startActivity(intent);
 
 
             } else if (id == R.id.horaires) {
