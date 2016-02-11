@@ -8,6 +8,7 @@ import com.example.leys.m1c20152016_planibu.R;
 import com.example.leys.m1c20152016_planibu.lireCSV;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 public class resultatCote extends AppCompatActivity {
@@ -16,12 +17,20 @@ public class resultatCote extends AppCompatActivity {
     String salle;
     String etagere;
     String autre;
+    String st;
+    private List<String[]> scoreList = new ArrayList<String[]>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat_cote);
-        TextView tv =(TextView) findViewById(R.id.resultatRecherche);
+        TextView tv =(TextView) findViewById(R.id.RechercheSalle);
+        TextView tv2 =(TextView) findViewById(R.id.RechercheEtagere);
+        TextView tv3 =(TextView) findViewById(R.id.resultatRechercheSalle);
+        TextView tv4 =(TextView) findViewById(R.id.resultatRechercheEtagere);
+
+        tv.setText("Salle");
+        tv2.setText("Etagere");
 
 
         Bundle extras = getIntent().getExtras();
@@ -34,14 +43,24 @@ public class resultatCote extends AppCompatActivity {
 
         for (String s : scoreList) {
             if (s.contains(recherche)) {
-                tv.setText(s);
+
+                String[] myArray = s.split(",");
+                System.out.println("ssss" + s);
+               // st = s.replace("[", "")
+               //         .replace("]", " ").trim();
+
+                System.out.println("ssss" + myArray[0]);
+                System.out.println("ssss2" + myArray[2]);
+
+                tv3.setText(myArray[0]);
+                tv4.setText(myArray[1]);
+
             }
-
-
-
-
 
 
         }
     }
+
+
+
 }

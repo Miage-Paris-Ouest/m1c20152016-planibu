@@ -25,8 +25,10 @@ public class lireCSV {
             String csvLine;
             while ((csvLine = reader.readLine()) != null) {
                 String[] row = csvLine.split(";");
+                android.text.TextUtils.join("-", row);
+
                 resultList.add(Arrays.toString(row));
-                System.out.println(Arrays.toString(row));
+                System.out.println(".text" + Arrays.toString(row));
 
             }
         }

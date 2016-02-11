@@ -9,12 +9,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.resultatCote">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
-        android:id="@+id/resultatRecherche"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/RechercheSalle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/resultatRechercheSalle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/RechercheSalle"
+        android:layout_toEndOf="@+id/RechercheSalle"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/RechercheEtagere"
+        android:layout_below="@+id/RechercheSalle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/resultatRechercheEtagere"
+        android:layout_below="@+id/resultatRechercheSalle"
+        android:layout_alignLeft="@+id/resultatRechercheSalle"
+        android:layout_alignStart="@+id/resultatRechercheSalle" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/resultatRechercheSalle"
+        android:layout_toLeftOf="@+id/resultatRechercheSalle"
+        android:layout_above="@+id/resultatRechercheEtagere"
+        android:layout_toRightOf="@+id/RechercheSalle"
+        android:layout_toEndOf="@+id/RechercheSalle"
+        android:id="@+id/space" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/RechercheSalle"
+        android:layout_toLeftOf="@+id/resultatRechercheSalle"
+        android:layout_alignBottom="@+id/resultatRechercheEtagere"
+        android:layout_toRightOf="@+id/RechercheSalle"
+        android:layout_toEndOf="@+id/RechercheSalle" />
+
 </RelativeLayout>
