@@ -49,7 +49,7 @@ public class resultatCote extends AppCompatActivity {
                 String[] myArray = st.split(",");
 
                 tv3.setText(myArray[0]);
-                tv4.setText(myArray[1]);
+                tv4.setText(myArray[2]);
 
             }
 

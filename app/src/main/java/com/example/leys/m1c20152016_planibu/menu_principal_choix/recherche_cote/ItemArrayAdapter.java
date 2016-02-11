@@ -64,11 +64,11 @@ public class ItemArrayAdapter extends ArrayAdapter<String[]>{
 			viewHolder = (ItemViewHolder) row.getTag();
 		}
 		String[] data_csv = getItem(position);
-		viewHolder.salle.setText(data_csv[0]);
+		viewHolder.cote.setText(data_csv[0]);
 		viewHolder.etagere.setText(data_csv[1]);
 		viewHolder.discipline.setText(data_csv[2]);
 		viewHolder.sous_discipline.setText(data_csv[3]);
-		viewHolder.cote.setText(data_csv[4]);
+		viewHolder.salle.setText(data_csv[4]);
 
 		return row;
 	}
