@@ -43,14 +43,10 @@ public class resultatCote extends AppCompatActivity {
 
         for (String s : scoreList) {
             if (s.contains(recherche)) {
+                st = s.replace("[", "")
+                         .replace("]", " ").trim();
 
-                String[] myArray = s.split(",");
-                System.out.println("ssss" + s);
-               // st = s.replace("[", "")
-               //         .replace("]", " ").trim();
-
-                System.out.println("ssss" + myArray[0]);
-                System.out.println("ssss2" + myArray[2]);
+                String[] myArray = st.split(",");
 
                 tv3.setText(myArray[0]);
                 tv4.setText(myArray[1]);
