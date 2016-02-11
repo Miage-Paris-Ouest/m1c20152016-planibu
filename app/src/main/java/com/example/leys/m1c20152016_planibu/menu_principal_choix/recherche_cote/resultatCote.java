@@ -22,13 +22,13 @@ public class resultatCote extends AppCompatActivity {
     String autre;
     String st;
     private ListView listView;
-    private ItemArrayAdapter itemArrayAdapter;
+    private ItemArrayAdapter2 itemArrayAdapter;
     ArrayList<String[]> listeTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_csv);
+        setContentView(R.layout.activity_resultat_cote);
 
         ;
 
@@ -38,7 +38,7 @@ public class resultatCote extends AppCompatActivity {
 
 
         listView = (ListView) findViewById(R.id.listViewCSV);
-        itemArrayAdapter = new ItemArrayAdapter(getApplicationContext(), R.layout.single_list_item);
+        itemArrayAdapter = new ItemArrayAdapter2(getApplicationContext(), R.layout.single_list_item2);
 
         Parcelable state = listView.onSaveInstanceState();
         listView.setAdapter(itemArrayAdapter);
