@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -47,36 +48,6 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        SearchView search=(SearchView) findViewById(R.id.searchView2);
-        search.setQueryHint("Recherche par côte");
-
-
-        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                Intent intent = new Intent(MainActivity.this, resultatCote.class);
-                Bundle extras = new Bundle();
-
-                recherche = query;
-
-                extras.putString("recherche", recherche);
-                intent.putExtras(extras);
-                startActivity(intent);
-
-
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-
-                return false;
-            }
-        });
     }
 
 
@@ -85,13 +56,41 @@ public class MainActivity extends AppCompatActivity
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
 
-        return true;
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_websearch)
+                .getActionView();
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+
+        if (searchView != null) {
+            searchView.setSearchableInfo(searchManager .getSearchableInfo(getComponentName()));
+
+            searchView.setIconifiedByDefault(true);
+            searchView.setOnQueryTextListener(new OnQueryTextListener(){
+                    //this method will call while press (click) search button.
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    return false;
+                }
+                    @Override
+                    public boolean onQueryTextSubmit(String query) {
+                        Intent intent = new Intent(MainActivity.this, resultatCote.class);
+                        Bundle extras = new Bundle();
+
+                        recherche = query;
+
+                        extras.putString("recherche", recherche);
+                        intent.putExtras(extras);
+                        startActivity(intent);
+
+
+                        return true;
+                    }
+
+
+            });
+        }
+        return super.onCreateOptionsMenu(menu);
     }
-
-
-
-
-
 
 
     @Override
@@ -106,9 +105,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
-
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -118,7 +114,6 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.selecDiscipline) {
             Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
             startActivity(intent);
-
         }
 
         else if (id == R.id.selecSousDiscipline) {
@@ -129,7 +124,6 @@ public class MainActivity extends AppCompatActivity
             if (id == R.id.selectCote) {
                 Intent intent = new Intent(MainActivity.this, CsvResultActivity.class);
                 startActivity(intent);
-
 
             } else if (id == R.id.horaires) {
                 Intent intent = new Intent(MainActivity.this, SelectionHoraires.class);
