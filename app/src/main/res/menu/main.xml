@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <meta-data
         android:name="android.app.default_searchable"
@@ -8,10 +9,13 @@
     <intent-filter>
         <action android:name="android.intent.action.SEARCH" />
     </intent-filter>
+
     <item
         android:id="@+id/action_websearch"
-        android:actionViewClass="android.widget.SearchView"
         android:icon="@android:drawable/ic_menu_search"
-        app:showAsAction="always"
-        android:title="search_title"/>
+        app:showAsAction="collapseActionView|ifRoom"
+        android:actionViewClass="android.widget.SearchView"
+        android:title="@string/titre_s" />
+
+
 </menu>

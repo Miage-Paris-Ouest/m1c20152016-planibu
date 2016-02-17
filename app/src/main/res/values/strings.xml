@@ -19,9 +19,13 @@
         <item>Sciences Humaines</item>
         <item>Economie</item>
     </string-array>
-
+    <!--  rechercher -->
+    <string name="search_hint">recherche</string>
+    <string name="app_label">recherche1</string>
+    <string name="titre_s">titre</string>
 
     <string name="title_activity_main">MainActivity</string>
+
     <string name="title_activity_main2">Main2Activity</string>
 
 
