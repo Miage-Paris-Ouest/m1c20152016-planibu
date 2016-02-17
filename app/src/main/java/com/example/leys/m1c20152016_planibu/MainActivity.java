@@ -7,12 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,6 +21,7 @@ import android.widget.Toast;
 import android.app.SearchManager;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
+
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContact;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionInfoRessources;
@@ -41,11 +40,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if(toolbar != null) {
-
-            getSupportActionBar().setHomeButtonEnabled(true);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -53,55 +47,80 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        SearchView search=(SearchView) findViewById(R.id.searchView2);
+        search.setQueryHint("Recherche par côte");
+
+
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                Intent intent = new Intent(MainActivity.this, resultatCote.class);
+                Bundle extras = new Bundle();
+
+                recherche = query;
+
+                extras.putString("recherche", recherche);
+                intent.putExtras(extras);
+                startActivity(intent);
+
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                return false;
+            }
+        });
     }
+
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
-        MenuItem searchItem= menu.findItem(R.id.action_websearch);
 
-        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-
-        if (searchView != null) {
-            SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-            searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-            searchView.setIconifiedByDefault(true);
-
-            searchView.setOnQueryTextListener(new OnQueryTextListener(){
-                    //this method will call while press (click) search button.
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setIconifiedByDefault(false);
+        searchView.setQueryHint("Recherche par côte");
 
 
-                    @Override
-                    public boolean onQueryTextSubmit(String query) {
-                        Intent intent = new Intent(MainActivity.this, resultatCote.class);
-                        Bundle extras = new Bundle();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
-                        recherche = query;
-                        if (searchView != null) {
-                            searchView.setVisibility(View.INVISIBLE);
-                            searchView.setVisibility(View.VISIBLE);
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                Intent intent = new Intent(MainActivity.this, resultatCote.class);
+                Bundle extras = new Bundle();
 
-                        }
+                recherche = query;
 
-                        extras.putString("recherche", recherche);
-                        intent.putExtras(extras);
-
-                        startActivity(intent);
+                extras.putString("recherche", recherche);
+                intent.putExtras(extras);
+                startActivity(intent);
 
 
-                        return true;
-                    }
-                @Override
-                public boolean onQueryTextChange(String newText) {
-                    return false;
-                }
+                return false;
+            }
 
-            });
-        }
-        return super.onCreateOptionsMenu(menu);
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                return false;
+            }
+
+        });
+
+        return true;
     }
+
 
 
     @Override
@@ -116,6 +135,9 @@ public class MainActivity extends AppCompatActivity
 
 
 
+
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -125,16 +147,18 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.selecDiscipline) {
             Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
             startActivity(intent);
+
         }
 
         else if (id == R.id.selecSousDiscipline) {
             Intent intent = new Intent(MainActivity.this, SelectionParSousDiscipline.class);
             startActivity(intent);
 
-    }else {
+        } else {
             if (id == R.id.selectCote) {
                 Intent intent = new Intent(MainActivity.this, CsvResultActivity.class);
                 startActivity(intent);
+
 
             } else if (id == R.id.horaires) {
                 Intent intent = new Intent(MainActivity.this, SelectionHoraires.class);

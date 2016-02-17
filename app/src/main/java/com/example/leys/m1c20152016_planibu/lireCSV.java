@@ -18,14 +18,14 @@ public class lireCSV {
         this.inputStream = inputStream;
     }
 
-    public List read(){
+    /* public List read(){
         List resultList = new ArrayList();
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
         try {
             String csvLine;
             while ((csvLine = reader.readLine()) != null) {
-                String str = csvLine.replaceAll(",","-");
-                String[] row = str.split(";");
+                //String str = csvLine.replaceAll(",","-");
+                //String[] row = str.split(";");
 
                 resultList.add(Arrays.toString(row));
                 System.out.println(".text" + Arrays.toString(row));
@@ -44,5 +44,5 @@ public class lireCSV {
             }
         }
         return resultList;
-    }
+    }*/
 }

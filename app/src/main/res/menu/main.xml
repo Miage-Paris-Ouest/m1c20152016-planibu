@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <meta-data
-        android:name="android.app.default_searchable"
-        android:value=".activity_that_handles_the_search" />
-
-    <intent-filter>
-        <action android:name="android.intent.action.SEARCH" />
-    </intent-filter>
-
-    <item
-        android:id="@+id/action_websearch"
-        android:icon="@android:drawable/ic_menu_search"
-        app:showAsAction="collapseActionView|ifRoom"
-        android:actionViewClass="android.widget.SearchView"
-        android:title="@string/titre_s" />
-
-
+<item android:id="@+id/search"
+    android:title="@string/titre_s"
+    android:icon="@android:drawable/ic_menu_search"
+    app:actionViewClass="android.widget.SearchView"
+    app:showAsAction="collapseActionView|ifRoom" />
 </menu>
+
+
+
