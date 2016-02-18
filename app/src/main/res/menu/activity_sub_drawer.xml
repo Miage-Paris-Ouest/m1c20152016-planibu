@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
                 <item
-                    android:id="@+id/selecDiscipline"
+                    android:id="@+id/sh"
                     android:icon="@drawable/ic_menu_camera"
                     android:title="Sciences Humaines"
                     />
                 <item
-                    android:id="@+id/selecSousDiscipline"
+                    android:id="@+id/langues"
                     android:icon="@drawable/ic_menu_gallery"
                     android:title="Langues" />
                 <item
-                    android:id="@+id/selectCote"
+                    android:id="@+id/retour"
                     android:icon="@drawable/ic_menu_slideshow"
-                    android:title="Histoire" />
+                    android:title="Retour" />
 
 
 </menu>

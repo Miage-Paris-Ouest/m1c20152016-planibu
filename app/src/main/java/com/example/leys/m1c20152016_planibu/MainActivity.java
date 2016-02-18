@@ -22,6 +22,7 @@ import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.resultatCote;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.SelectionParDiscipline;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionParSousDiscipline;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_sh.SelectionSalleSH;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -131,7 +132,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -141,15 +141,27 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.selecDiscipline) {
             //Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
             //startActivity(intent);
-
             navigationView.getMenu().clear();
             navigationView.inflateMenu(R.menu.activity_sub_drawer);
 
+        }
 
+        if (id == R.id.retour) {
+            //Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
+            //startActivity(intent);
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.activity_main_drawer);
+        }
+
+        if (id == R.id.sh) {
+            //Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
+            //startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, SelectionSalleSH.class);
+            startActivity(intent);
         }
 
         else if (id == R.id.selecSousDiscipline) {
-            Intent intent = new Intent(MainActivity.this, SelectionParSousDiscipline.class);
+            Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
             startActivity(intent);
 
         } else {
