@@ -7,7 +7,8 @@
                 <item
                     android:id="@+id/selecDiscipline"
                     android:icon="@drawable/ic_menu_camera"
-                    android:title="Discipline" />
+                    android:title="Discipline"
+                    />
                 <item
                     android:id="@+id/selecSousDiscipline"
                     android:icon="@drawable/ic_menu_gallery"

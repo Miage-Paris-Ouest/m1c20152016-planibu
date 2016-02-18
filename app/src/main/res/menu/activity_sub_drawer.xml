@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <item
+                    android:id="@+id/selecDiscipline"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Sciences Humaines"
+                    />
+                <item
+                    android:id="@+id/selecSousDiscipline"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Langues" />
+                <item
+                    android:id="@+id/selectCote"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Histoire" />
+
+
+</menu>
+
+
+

@@ -33,13 +33,6 @@
 
     </LinearLayout>
 
-    <SearchView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchView"
-        android:layout_marginTop="0dp" />
-
-
 
 </LinearLayout>
 

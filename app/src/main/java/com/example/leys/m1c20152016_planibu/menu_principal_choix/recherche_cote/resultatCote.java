@@ -4,10 +4,8 @@ import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.leys.m1c20152016_planibu.R;
-import com.example.leys.m1c20152016_planibu.lireCSV;
 
 import java.io.InputStream;
 import java.util.ArrayList;

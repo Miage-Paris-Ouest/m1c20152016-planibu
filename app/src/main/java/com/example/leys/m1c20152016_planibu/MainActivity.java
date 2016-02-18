@@ -1,7 +1,6 @@
 package com.example.leys.m1c20152016_planibu;
 
 import android.app.SearchManager;
-import android.app.SearchableInfo;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,16 +10,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.SearchView;
-import android.widget.Toast;
-import android.app.SearchManager;
-import android.widget.SearchView;
-import android.widget.SearchView.OnQueryTextListener;
 
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContact;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
@@ -34,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     String recherche;
+    NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         SearchView search=(SearchView) findViewById(R.id.searchView2);
         search.setQueryHint("Recherche par côte");
@@ -145,8 +139,12 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.selecDiscipline) {
-            Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
-            startActivity(intent);
+            //Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
+            //startActivity(intent);
+
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.activity_sub_drawer);
+
 
         }
 
@@ -172,8 +170,6 @@ public class MainActivity extends AppCompatActivity
             }
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
