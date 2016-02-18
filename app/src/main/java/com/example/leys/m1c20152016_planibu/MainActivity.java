@@ -45,33 +45,6 @@ public class MainActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        SearchView search=(SearchView) findViewById(R.id.searchView2);
-        search.setQueryHint("Recherche par côte");
-
-
-        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                Intent intent = new Intent(MainActivity.this, resultatCote.class);
-                Bundle extras = new Bundle();
-
-                recherche = query;
-
-                extras.putString("recherche", recherche);
-                intent.putExtras(extras);
-                startActivity(intent);
-
-
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-
-                return false;
-            }
-        });
     }
 
 

@@ -16,6 +16,9 @@ public class ItemArrayAdapter2 extends ArrayAdapter<String[]>{
 
 	private List<String[]> scoreList = new ArrayList<String[]>();
 
+
+
+
 	static class ItemViewHolder {
 		TextView salle;
 		TextView etagere;
@@ -63,12 +66,19 @@ public class ItemArrayAdapter2 extends ArrayAdapter<String[]>{
 		} else {
 			viewHolder = (ItemViewHolder) row.getTag();
 		}
+
+
 		String[] data_csv = getItem(position);
-		viewHolder.cote.setText(data_csv[0]);
-		viewHolder.etagere.setText(data_csv[1]);
-		viewHolder.discipline.setText(data_csv[2]);
-		viewHolder.sous_discipline.setText(data_csv[3]);
-		viewHolder.salle.setText(data_csv[4]);
+        String cote = "Cote : " + data_csv[4];
+        String etagere = "Etagère : " + data_csv[1];
+        String discipline = "Discipline : " + data_csv[2];
+        String sousDiscipline = "Sous discipline : " + data_csv[3] ;
+        String salle = "Salle : " + data_csv[0];
+		viewHolder.cote.setText(cote);
+		viewHolder.etagere.setText(etagere);
+		viewHolder.discipline.setText(discipline);
+		viewHolder.sous_discipline.setText(sousDiscipline);
+		viewHolder.salle.setText(salle);
 
 		return row;
 	}
