@@ -88,6 +88,8 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
     <string name="imgplandroit">imgplandroit</string>
     <string name="switchdiscipline">Switch Discipline</string>
     <string name="csv_title_liste">Lecture fichier csv</string>
+    <string name="plan_sans_serv">plan sans serv</string>
+    <string name="switch_on_services">Services</string>
 
 
     <!--PAGE CONTACT-->
