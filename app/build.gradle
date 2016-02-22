@@ -22,6 +22,7 @@ android {
 
         //nom complet de la version
         versionName "1.0"
+
     }
 	lintOptions {
     abortOnError false
