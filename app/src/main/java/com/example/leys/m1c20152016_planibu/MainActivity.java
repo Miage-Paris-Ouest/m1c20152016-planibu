@@ -1,8 +1,11 @@
 package com.example.leys.m1c20152016_planibu;
 
+import android.annotation.TargetApi;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,7 +16,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.Switch;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionContact;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionHoraires;
@@ -23,6 +31,8 @@ import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.SelectionParDiscipline;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionParSousDiscipline;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_sh.SelectionSalleSH;
+
+import static com.example.leys.m1c20152016_planibu.R.drawable.buplanvif;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,6 +44,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
 
 
@@ -45,7 +56,41 @@ public class MainActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        setContentView(R.layout.activity_main);
+
+        Switch mySwitch = (Switch) findViewById(R.id.main_switch_service);
+        final ImageView planServicesOrNot = (ImageView)findViewById(R.id.main_planServiceOrNot);
+
+
+//set the switch to ON
+        mySwitch.setChecked(false);
+        //attach a listener to check for changes in state
+        mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked)
+                {
+                    Toast.makeText(getApplicationContext(),"Services ON",Toast.LENGTH_SHORT).show();
+                       planServicesOrNot.setBackground(Drawable.createFromPath("plan_all_services"));
+                    planServicesOrNot.setImageResource(R.drawable.buplanvif);
+
+
+                }else{
+                    Toast.makeText(getApplicationContext(),"Services OFF",Toast.LENGTH_SHORT).show();
+                    planServicesOrNot.setImageResource(R.drawable.plan_sans_services_vif);
+
+
+                }
+
+            }
+
+        });
     }
+
 
 
 
