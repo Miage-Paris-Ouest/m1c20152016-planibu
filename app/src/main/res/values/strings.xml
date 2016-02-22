@@ -90,6 +90,7 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
     <string name="csv_title_liste">Lecture fichier csv</string>
     <string name="plan_sans_serv">plan sans serv</string>
     <string name="switch_on_services">Services</string>
+    <string name="droit_button_myFrag">Salle suivante</string>
 
 
     <!--PAGE CONTACT-->
