@@ -28,7 +28,12 @@ import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.resultatCote;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.SelectionParDiscipline;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.SelectionParSousDiscipline;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_bulle.SelectionSalleBulle;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_droit.SelectionSalleDroit;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_eco.SelectionSalleEco;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_litterature.SelectionSalleLitterature;
 import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_sh.SelectionSalleSH;
+import com.example.leys.m1c20152016_planibu.menu_principal_choix.selection_par_discipline.salle_ss.SelectionSalleSociale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -156,6 +161,30 @@ public class MainActivity extends AppCompatActivity
             //Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
             //startActivity(intent);
             Intent intent = new Intent(MainActivity.this, SelectionSalleSH.class);
+            startActivity(intent);
+        }
+
+        else if (id == R.id.langues) {
+            Intent intent = new Intent(MainActivity.this, SelectionSalleLitterature.class);
+            startActivity(intent);
+        }
+
+        else if (id == R.id.droit) {
+              Intent intent = new Intent(MainActivity.this, SelectionSalleDroit.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.seco) {
+            Intent intent = new Intent(MainActivity.this, SelectionSalleEco.class);
+            startActivity(intent);
+        }
+
+        else if (id == R.id.ss) {
+            Intent intent = new Intent(MainActivity.this, SelectionSalleSociale.class);
+            startActivity(intent);
+        }
+
+     else if (id == R.id.bulle) {
+            Intent intent = new Intent(MainActivity.this, SelectionSalleBulle.class);
             startActivity(intent);
         }
 
