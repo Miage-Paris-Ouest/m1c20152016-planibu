@@ -14,6 +14,15 @@
         android:textStyle="bold"
         android:gravity="center_vertical|center_horizontal" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/droit_button_myFrag"
+        android:id="@+id/salleDroit_button_fragment"
+        android:layout_gravity="bottom"
+        style="@style/Base.Widget.AppCompat.ActionButton"
+        android:background="#ffedb5" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

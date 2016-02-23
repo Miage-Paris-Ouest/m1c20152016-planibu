@@ -21,6 +21,29 @@
         android:icon="@drawable/ic_menu_gallery"
         android:title="Langues" />
 
+    <item
+        android:id="@+id/droit"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Droit"
+        />
+
+    <item
+        android:id="@+id/ss"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Sciences Sociales"
+        />
+
+    <item
+        android:id="@+id/seco"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Sciences Economiques"
+        />
+
+    <item
+        android:id="@+id/bulle"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="La BUlle" />
+
 
 </menu>
 

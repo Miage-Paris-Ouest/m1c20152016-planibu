@@ -10,15 +10,95 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.leys.m1c20152016_planibu.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:background="@drawable/backgroundbup_10">
+    android:background="@drawable/backgroundbup_10_mini"
+    >
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView3"
-        android:src="@drawable/buplanvif"
-        android:layout_marginTop="86dp"
+        android:layout_width="400dp"
+        android:layout_height="290dp"
+        android:id="@+id/main_planServiceOrNot"
+        android:src="@drawable/plan_sans_services_vif"
+        android:contentDescription="@string/plan_sans_serv"
+        android:layout_alignTop="@+id/main_switch_service"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switch_on_services"
+        android:id="@+id/main_switch_service"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp"
+        android:checked="false"
+        android:clickable="true"
+        android:buttonTint="#ff8700" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/main_planServiceOrNot"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutton_docmini"
+            android:src="@drawable/logo_doc_mini"
+            android:contentDescription="@string/docmini"
+            android:background="@drawable/abc_btn_colored_material" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutton_grpmini"
+            android:src="@drawable/logo_groupe_mini"
+            android:contentDescription="@string/grpmini"
+            android:background="@drawable/abc_btn_colored_material" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/imgbutton_handmini"
+            android:src="@drawable/logo_hand_mini"
+            android:contentDescription="@string/handmini"
+            android:background="@drawable/abc_btn_colored_material" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutton_imp_mini"
+            android:src="@drawable/logo_imp_mini"
+            android:contentDescription="@string/docmini"
+            android:background="@drawable/abc_btn_colored_material" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutton_pretbupretetu"
+            android:src="@drawable/logo_pretbupretetu_mini"
+            android:contentDescription="@string/docmini"
+            android:background="@drawable/abc_btn_colored_material" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutton_pretdom"
+            android:src="@drawable/logo_pretdom_mini"
+            android:contentDescription="@string/docmini"
+            android:background="@drawable/abc_btn_colored_material" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbutton_repro"
+            android:src="@drawable/logo_repro_mini"
+            android:contentDescription="@string/docmini"
+            android:background="@drawable/abc_btn_colored_material" />
+    </LinearLayout>
 
 </RelativeLayout>

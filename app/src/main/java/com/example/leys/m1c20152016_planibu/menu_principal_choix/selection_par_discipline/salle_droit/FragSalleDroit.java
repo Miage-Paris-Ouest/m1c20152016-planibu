@@ -19,7 +19,7 @@ import com.example.leys.m1c20152016_planibu.R;
  * Use the {@link FragSalleDroit#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragSalleDroit extends ListFragment {
+public class FragSalleDroit extends Fragment {
     private OnFragmentInteractionListener mListener;
 
 

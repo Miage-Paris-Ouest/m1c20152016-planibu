@@ -20,9 +20,11 @@ public class SelectionSalleDroit extends AppCompatActivity {
     ListView lvDisciplinesDroit;
     ArrayAdapter<String> adapter;
     FrameLayout frameLayout;
+
     Fragment fragDroit;
     Fragment fragScPo;
     Fragment fragSalleDroit;
+    Button myFrag;
     int cpt = 0;
 
 
@@ -37,11 +39,11 @@ public class SelectionSalleDroit extends AppCompatActivity {
         final String[] tabDisciplinesDeDroit = {"Droit", "Sciences Politiques"};
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, tabDisciplinesDeDroit);
         lvDisciplinesDroit.setAdapter(adapter);
-/*
+
         //TEST SWITCH BUTTON DISCIPLINE
 
         final Button myFrag = (Button) findViewById(R.id.salleDroit_button_fragment);
-        frameLayout = (FrameLayout) findViewById(R.id.salledroit_fragment_layout_img);
+        //frameLayout = (FrameLayout) findViewById(R.id.salledroit_fragment_layout_img);
 
         fragSalleDroit = new FragSalleDroit();
         fragDroit = new FragDroit();
@@ -62,21 +64,24 @@ public class SelectionSalleDroit extends AppCompatActivity {
 
                 switch (cpt) {
                     case 0:
+                        ft.replace(R.id.salledroit_fragment_layout_img, fragSalleDroit);
+                        cpt++;
+                    break;
+
+                    case 1:
                         ft.replace(R.id.salledroit_fragment_layout_img, fragDroit);
                         cpt++;
-                        break;
-                    case 1:
+                    break;
+                    case 2:
                         ft.replace(R.id.salledroit_fragment_layout_img, fragScPo);
                         cpt = 0;
-                        break;
-
+                    break;
                 }
                 ft.commit();
             }
 
         });
 
-        */
 
         /* //TEST POUR SWITCHER AVEC LA LISTE
         fragSalleDroit = new FragSalleDroit();
