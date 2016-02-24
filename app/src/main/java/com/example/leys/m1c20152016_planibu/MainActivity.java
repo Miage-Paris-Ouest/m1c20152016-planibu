@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "Atelier documentaire ", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_atelierdoc);
 
             }
@@ -124,6 +125,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "Espace de travail en groupe", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_groupe);
 
             }
@@ -138,6 +140,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "Accueil personne avec handicap", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_handi);
 
             }
@@ -154,6 +157,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "Copieurs , imprimantes", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_imp);
 
             }
@@ -170,6 +174,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "Prêt bibliothèques/etudiant", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_peepeb);
 
             }
@@ -184,6 +189,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "prêt à domicile", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_pret_domicile);
 
             }
@@ -198,6 +204,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View arg0) {
                 final ImageView imgView1 = (ImageView) findViewById(R.id.imgview1);
+                Toast.makeText(getApplicationContext(), "Service de reprographie", Toast.LENGTH_SHORT).show();
                 imgView1.setImageResource(R.drawable.plan_sans_services_presse);
 
             }
