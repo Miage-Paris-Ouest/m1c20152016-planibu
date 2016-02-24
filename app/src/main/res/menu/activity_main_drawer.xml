@@ -23,12 +23,12 @@
             <item
                 android:id="@+id/horaires"
                 android:icon="@drawable/clock"
-                android:title="Horaires et accès" />
+                android:title="Horaires" />
 
             <item
                 android:id="@+id/inforessources"
                 android:icon="@drawable/circle"
-                android:title="Info ressources" />
+                android:title="Ressources et accès" />
 
             <item
                 android:id="@+id/contact"

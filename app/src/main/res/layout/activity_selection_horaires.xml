@@ -17,107 +17,32 @@
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </TableRow>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listHoraires" />
 
     </TableLayout>
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/horaires_titre_acces"
-        android:id="@+id/horaires_textView_titre_acces"
-        android:textStyle="bold"
-        android:typeface="serif"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_below="@+id/tableLayout"
-        android:layout_toLeftOf="@+id/imageView5"
-        android:layout_toStartOf="@+id/imageView5" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/horaires_titre"
         android:id="@+id/horaires_textView_noshoraires"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
-        android:typeface="serif" />
+        android:typeface="serif"
+        android:gravity="center_vertical" />
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:id="@+id/imageView2"
         android:src="@mipmap/clock"
         android:contentDescription="@string/horaires_img"
-        android:layout_below="@+id/horaires_textView_noshoraires"
-        android:layout_alignRight="@+id/tableLayout"
-        android:layout_alignEnd="@+id/tableLayout"
-        android:clickable="false" />
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/horaires_textView_noshoraires"
-        android:layout_alignStart="@+id/horaires_textView_noshoraires" />
-
-    <ImageView
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:id="@+id/imageView5"
-        android:src="@drawable/plan_acces"
-        android:layout_below="@+id/textView3"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:text="@string/horaires_acces_desc"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/horaires_textView_titre_acces"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:gravity="center_vertical|center_horizontal" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:text="@string/jours_semaine"
-        android:id="@+id/textView4"
-        android:gravity="center_vertical|center_horizontal"
-        android:textStyle="bold"
-        android:layout_alignTop="@+id/horaires_textView_noshoraires"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/horaires_textView_noshoraires"
-        android:layout_alignEnd="@+id/horaires_textView_noshoraires" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:text="@string/jours_weekend"
-        android:id="@+id/textView"
-        android:textStyle="bold"
-        android:gravity="center_vertical"
-        android:layout_above="@+id/textView3"
-        android:layout_alignRight="@+id/scrollView"
-        android:layout_alignEnd="@+id/scrollView" />
+        android:clickable="false"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>
