@@ -312,11 +312,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         }
 
-       /* else if (id == R.id.selecSousDiscipline) {
-            Intent intent = new Intent(MainActivity.this, SelectionParDiscipline.class);
-            startActivity(intent);
 
-        }*/ else {
+        else {
             if (id == R.id.selectCote) {
                 Intent intent = new Intent(MainActivity.this, CsvResultActivity.class);
                 startActivity(intent);
