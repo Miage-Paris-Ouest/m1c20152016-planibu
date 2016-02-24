@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Résultat de la recherche par côte"
         android:id="@+id/csv_title_liste"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

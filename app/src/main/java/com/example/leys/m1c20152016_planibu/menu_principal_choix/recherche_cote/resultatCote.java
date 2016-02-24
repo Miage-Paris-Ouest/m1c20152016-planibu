@@ -4,6 +4,7 @@ import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.leys.m1c20152016_planibu.R;
 
@@ -28,7 +29,7 @@ public class resultatCote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat_cote);
 
-        ;
+        String tv = "Résultat pour la cote";
 
 
         Bundle extras = getIntent().getExtras();
@@ -36,6 +37,10 @@ public class resultatCote extends AppCompatActivity {
 
 
         listView = (ListView) findViewById(R.id.listViewCSV);
+
+        TextView textView = (TextView) findViewById(R.id.csv_title_liste);
+
+
         itemArrayAdapter = new ItemArrayAdapter2(getApplicationContext(), R.layout.single_list_item2);
 
         Parcelable state = listView.onSaveInstanceState();
@@ -45,12 +50,36 @@ public class resultatCote extends AppCompatActivity {
         InputStream inputStream = getResources().openRawResource(R.raw.databu_shs);
         CSVReader csv = new CSVReader(inputStream);
         List<String[]> scoreList = csv.read();
+
         /* % for (String[] scoreData : scoreList) {
             if (Arrays.asList(scoreData).contains(recherche)) {
 
                 itemArrayAdapter.add(scoreData);
             }
         }*/
+
+        for (String[] scoreData : scoreList) {
+            String str = Arrays.asList(scoreData).toString();
+            System.out.println("str : " + str);
+
+            for (int i = 0; i<=4; i++) {
+                String[] row = str.split(",");
+                System.out.println("row :" + row[i]);
+
+                if (i == 4) {
+
+                    if (row[i].startsWith(" " + recherche, 0)) {
+
+                        System.out.println("startswith : " + row[i]);
+
+                        itemArrayAdapter.add(scoreData);
+                        String tvFinale = tv+ row[i].replace("]", "");
+                        textView.setText(tvFinale);
+                    }
+                }
+            }
+        }
+
 
         System.out.println("scoreList : " + scoreList);
 
