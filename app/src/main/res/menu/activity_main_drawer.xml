@@ -6,13 +6,13 @@
             <menu>
                 <item
                     android:id="@+id/selecDiscipline"
-                    android:icon="@drawable/ic_menu_camera"
+                    android:icon="@drawable/library"
                     android:title="Discipline"
                     />
 
                 <item
                     android:id="@+id/selectCote"
-                    android:icon="@drawable/ic_menu_slideshow"
+                    android:icon="@drawable/symbol"
                     android:title="Cote" />
             </menu>
         </item>
@@ -22,17 +22,17 @@
         <menu>
             <item
                 android:id="@+id/horaires"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/clock"
                 android:title="Horaires et accès" />
 
             <item
                 android:id="@+id/inforessources"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@drawable/circle"
                 android:title="Info ressources" />
 
             <item
                 android:id="@+id/contact"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/note"
                 android:title="Contact" />
 
         </menu>

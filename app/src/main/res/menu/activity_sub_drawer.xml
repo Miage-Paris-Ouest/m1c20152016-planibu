@@ -4,44 +4,44 @@
 
     <item
         android:id="@+id/retour"
-        android:icon="@drawable/ic_menu_slideshow"
+        android:icon="@drawable/arrows"
         android:title="Retour" />
 
 
 
     <item
         android:id="@+id/sh"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/medical"
         android:title="Sciences Humaines"
         />
 
 
     <item
         android:id="@+id/langues"
-        android:icon="@drawable/ic_menu_gallery"
+        android:icon="@drawable/letter"
         android:title="Langues" />
 
     <item
         android:id="@+id/droit"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/other"
         android:title="Droit"
         />
 
     <item
         android:id="@+id/ss"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/graphic"
         android:title="Sciences Sociales"
         />
 
     <item
         android:id="@+id/seco"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/sharing"
         android:title="Sciences Economiques"
         />
 
     <item
         android:id="@+id/bulle"
-        android:icon="@drawable/ic_menu_gallery"
+        android:icon="@drawable/people"
         android:title="La BUlle" />
 
 
