@@ -29,16 +29,11 @@ public class resultatCote extends AppCompatActivity {
     private ItemArrayAdapter itemArrayAdapter;
     List<String> listeEtagere = new ArrayList<String>();
 
-    Float Xleft;
-    Float Xright;
-    Float Ybottom;
-    Float Yup;
+    Float Xf;
+    Float Yf;
 
-    String XleftS;
-    String XrightS;
-    String YbottomS;
-    String YupS;
-
+    String Xs;
+    String Ys;
     String rowStr = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,18 +78,13 @@ public class resultatCote extends AppCompatActivity {
 
                 if (i == 4) {
 
-                    if (row[i].startsWith(" " + recherche, 0) ) {
+                    if (row[4].startsWith(" " + recherche, 0) ) {
 
                         System.out.println("startswith : " + row[i]);
 
                         itemArrayAdapter.add(scoreData);
 
-                        System.out.println("scoreData : " + row[i]);
-                        System.out.println("scoreData2 : " + row[2]);
-                        System.out.println("scoreData3 : " + row[3]);
-                        System.out.println("scoreData4 : " + row[4]);
-                        System.out.println("scoreData0 : " + row[0]);
-                        System.out.println("scoreData1 : " + row[1]);
+
 
 
                         rowStr = row[1];
@@ -133,14 +123,6 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
             for (int i = 0; i<=1; i++) {
 
-
-                System.out.println("startswithY0 : " + row[0]);
-                System.out.println("startswithY1 : " + row[1]);
-                System.out.println("startswithY2 : " + row[2]);
-                System.out.println("startswithY3 : " + row[3]);
-                System.out.println("startswithY4 : " + row[4]);
-                System.out.println("startswithY5 : " + row[5]);
-
                 if (row[i].startsWith(" ",0)){
                     row[i] = row[i].replace(" ","");
                 }
@@ -153,33 +135,34 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
 
 
-                        XleftS = row[2].replace(" ","");
-                        XrightS = row[3].replace(" ","");
-                        YbottomS = row[4].replace(" ","");
-                        YupS = row[5].replace(" ","");
+                        Xs = row[2].replace(" ","");
+                        Ys = row[3].replace(" ","");
 
-                        if (XleftS.contains("-")) {
+                        System.out.println("XS : " + row[i]);
+                        System.out.println("YS" + row[i]);
 
-                            XleftS = XleftS.replace("-",".");
+
+                        if (Xs.contains("-")) {
+
+                            Xs = Xs.replace("-",".");
                         }
-                        if (XrightS.contains("-")) {
+                        if (Ys.contains("]")) {
 
-                            XrightS = XrightS.replace("-",".");
+                            Ys = Ys.replace("-",".");
+                            Ys = Ys.replace("]","");
                         }
-                        if (YbottomS.contains("-")) {
 
-                            YbottomS = YbottomS.replace("-",".");
+                        if (Xs.contains("-")) {
+                            Xs = Xs.replace("-",".");
+
                         }
-                        if (YupS.contains("-")) {
+                            if (Ys.contains("-")) {
 
-                            YupS = YupS.replace("-",".");
+                            Ys = Ys.replace("-",".");
                         }
-                        Xleft = Float.parseFloat(XleftS);
-                        Xright = Float.parseFloat(XrightS);
-                        Ybottom = Float.parseFloat(YbottomS);
-                        Yup = Float.parseFloat(YupS);
+                        Xf = Float.parseFloat(Xs);
+                        Yf = Float.parseFloat(Ys);
 
-                        System.out.println("COORD " + Xleft + " - "+ Xright + " - "+ Ybottom + " - " + Yup );
 
                                 rowStr = row[1];
                         listeEtagere.add(rowStr);
@@ -196,17 +179,13 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
 
 
-
-
-
-
-
+/*
 
         ImageView iv =  (ImageView) findViewById(R.id.imageView3);
 
-        Bitmap bitMap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888);  //creates bmp
+        Bitmap bitMap = Bitmap.createBitmap(100, 130, Bitmap.Config.ARGB_8888);  //creates bmp
+
         bitMap = bitMap.copy(bitMap.getConfig(), true);     //lets bmp to be mutable
-        System.out.println("COORD2 " + Xleft + " - "+ Xright + " - "+ Ybottom + " - " + Yup );
 
         Canvas canvas = new Canvas(bitMap);                 //draw a canvas in defined bmp
 
@@ -219,16 +198,26 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
         iv.setImageBitmap(bitMap);
         //changed set image resource to set image background resource
+<<<<<<< Updated upstream
         iv.setBackgroundResource(R.drawable.plansh);
         //canvas.drawCircle(30, 40, 3, paint);
         canvas.drawRect(Xleft,Yup,Xright,Ybottom,paint);
         canvas.drawCircle(Xleft, Ybottom, 3, paint);
         canvas.drawCircle(Xright, Yup, 3, paint);
         //invalidate to update bitmap in imageview
+=======
+        iv.setBackgroundResource(R.drawable.plansh2);
+        canvas.drawCircle(Xf, Yf, 3, paint);
+
+
+
+>>>>>>> Stashed changes
         iv.invalidate();
 
 
-        System.out.println("scoreList : " + scoreList);
+*/
+
+
 
 
     }
