@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:id="@+id/horizontalScrollView2"
         android:fillViewport="false"
->
+        android:layout_alignBottom="@+id/relativeLayout">
 
         <ListView
             android:layout_width="80dp"
@@ -37,5 +37,23 @@
             android:foregroundGravity="center" />
     </HorizontalScrollView>
 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        tools:context="com.example.leys.m1c20152016_planibu.menu_principal_choix.recherche_cote.CsvResultActivity"
+        android:id="@+id/relativeLayout">
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/plansh"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/horizontalScrollView2" />
 
 </RelativeLayout>
