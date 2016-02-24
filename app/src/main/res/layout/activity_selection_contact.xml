@@ -54,6 +54,6 @@
             android:elevation="4dp"
             android:paddingLeft="70dp"
             android:paddingRight="70dp"
-            android:text="Submit"
+            android:text="Envoyer"
             android:textColor="#fff" />
     </LinearLayout>
