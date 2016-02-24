@@ -8,21 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVReader {
+
 	InputStream inputStream;
 	public CSVReader(InputStream is) {
 		this.inputStream = is;
 	}
-	
+
 	public List<String[]> read() throws RuntimeException {
 		List<String[]> resultList = new ArrayList<>();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-		
+
 		try {
 			String csvLine;
 			while((csvLine = reader.readLine()) != null) {
-				String[] row = csvLine.split(";");
+				String[] row = csvLine.replace(",", "-").split(";");
 				resultList.add(row);
-				System.out.print("lecture des lignes en cours");
 			}
 		} catch(IOException ex) {
 			throw new RuntimeException("Error in reading CSV file:" + ex);
@@ -33,6 +33,8 @@ public class CSVReader {
 				throw new RuntimeException("Error while closing input stream: " + e);
 			}
 		}
+
+		// test
 		return resultList;
 	}
 }

@@ -29,7 +29,7 @@ public class resultatCote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultat_cote);
 
-        String tv = "Résultat pour la cote";
+        String tv = "Résultat pour la cote ";
 
 
         Bundle extras = getIntent().getExtras();
@@ -51,6 +51,12 @@ public class resultatCote extends AppCompatActivity {
         CSVReader csv = new CSVReader(inputStream);
         List<String[]> scoreList = csv.read();
 
+        /* % for (String[] scoreData : scoreList) {
+            if (Arrays.asList(scoreData).contains(recherche)) {
+
+                itemArrayAdapter.add(scoreData);
+            }
+        }*/
 
         for (String[] scoreData : scoreList) {
             String str = Arrays.asList(scoreData).toString();
@@ -62,14 +68,18 @@ public class resultatCote extends AppCompatActivity {
 
                 if (i == 4) {
 
-                    if (row[i].startsWith(" " + recherche, 0)) {
+                    if (row[i].startsWith(" " + recherche, 0) ) {
 
                         System.out.println("startswith : " + row[i]);
 
                         itemArrayAdapter.add(scoreData);
-                        String tvFinale = tv+ row[i].replace("]", "");
+
+                        System.out.println("scoreData : " + row[i]);
+
+                        String tvFinale = tv+ recherche;
                         textView.setText(tvFinale);
                     }
+
                 }
             }
         }

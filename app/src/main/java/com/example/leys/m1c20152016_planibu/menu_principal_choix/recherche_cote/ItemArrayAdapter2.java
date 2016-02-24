@@ -69,12 +69,12 @@ public class ItemArrayAdapter2 extends ArrayAdapter<String[]>{
 
 
 		String[] data_csv = getItem(position);
-        //String cote = "Cote : " + data_csv[4];
+        String cote = "Cote : " + data_csv[4];
         String etagere = "Etagère : " + data_csv[1];
         String discipline = "Discipline : " + data_csv[2];
         String sousDiscipline = "Sous discipline : " + data_csv[3] ;
         String salle = "Salle : " + data_csv[0];
-		//viewHolder.cote.setText(cote);
+		viewHolder.cote.setText(cote);
 		viewHolder.etagere.setText(etagere);
 		viewHolder.discipline.setText(discipline);
 		viewHolder.sous_discipline.setText(sousDiscipline);
