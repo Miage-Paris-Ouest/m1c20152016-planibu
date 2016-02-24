@@ -85,13 +85,8 @@ public class resultatCote extends AppCompatActivity {
                         itemArrayAdapter.add(scoreData);
 
 
-
-
                         rowStr = row[1];
                         listeEtagere.add(rowStr);
-
-                        // String tvFinale = tv+ recherche;
-                        //textView.setText(tvFinale);
                     }
 
                 }
@@ -164,11 +159,6 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
                         Yf = Float.parseFloat(Ys);
 
 
-                                rowStr = row[1];
-                        listeEtagere.add(rowStr);
-
-                        // String tvFinale = tv+ recherche;
-                        //textView.setText(tvFinale);
                     }
 
 

@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity
         SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setIconifiedByDefault(false);
-        searchView.setQueryHint("Recherche par cÃ´te");
+        searchView.setQueryHint("Recherche par cote");
 
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
