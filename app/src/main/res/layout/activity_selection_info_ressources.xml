@@ -5,7 +5,7 @@
     android:weightSum="1">
 
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:id="@+id/tableLayout">
 
@@ -41,22 +41,21 @@
         android:id="@+id/scrollView" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="354dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/infores_titre2"
-        android:id="@+id/textView5"
-        android:layout_weight="0.04" />
+        android:id="@+id/textView5" />
 
     <TextView
-        android:layout_width="335dp"
+        android:layout_width="322dp"
         android:layout_height="70dp"
         android:text="@string/infores_desc2"
         android:id="@+id/textView3"
         android:gravity="center_vertical" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/infores_titre3"
@@ -64,7 +63,7 @@
         android:layout_weight="0.04" />
 
     <TextView
-        android:layout_width="335dp"
+        android:layout_width="312dp"
         android:layout_height="70dp"
         android:text="@string/infores_desc3"
         android:id="@+id/textView6"
@@ -79,12 +78,11 @@
         android:layout_weight="0.04" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="326dp"
         android:layout_height="wrap_content"
         android:text="@string/infores_desc4"
         android:id="@+id/infores_textview_desc4"
-        android:gravity="center_vertical"
-        android:layout_weight="0.66" />
+        android:gravity="center_vertical" />
 
     <TextView
         android:layout_width="match_parent"

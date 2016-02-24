@@ -6,7 +6,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact"
+        android:text="@string/contact"
         android:id="@+id/contact_titre"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="271dp"
+        android:layout_height="147dp"
+        android:text="@string/adresse_bu"
+        android:id="@+id/adress_bu"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

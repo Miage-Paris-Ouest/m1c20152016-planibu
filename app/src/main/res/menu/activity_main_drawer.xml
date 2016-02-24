@@ -9,10 +9,7 @@
                     android:icon="@drawable/ic_menu_camera"
                     android:title="Discipline"
                     />
-                <item
-                    android:id="@+id/selecSousDiscipline"
-                    android:icon="@drawable/ic_menu_gallery"
-                    android:title="Sous discipline" />
+
                 <item
                     android:id="@+id/selectCote"
                     android:icon="@drawable/ic_menu_slideshow"

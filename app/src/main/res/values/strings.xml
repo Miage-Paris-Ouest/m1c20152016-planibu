@@ -96,6 +96,8 @@ La Vidéothèque,  les ouvrages de cinéma et les périodiques se trouvent égal
     <string name="docmini">docmini</string>
     <string name="grpmini">groupe mini</string>
     <string name="handmini">hand mini</string>
+    <string name="contact">Contact</string>
+    <string name="adresse_bu"> Voir Horaires et Accès 01 40 97 72 02</string>
 
 
     <!--PAGE CONTACT-->
