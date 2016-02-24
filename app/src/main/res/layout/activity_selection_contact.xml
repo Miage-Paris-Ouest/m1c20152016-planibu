@@ -23,14 +23,16 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:id="@+id/contact_email" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Objet"
-            android:inputType="textEmailSubject" />
+            android:inputType="textEmailSubject"
+            android:id="@+id/contact_obj" />
 
         <EditText
             android:layout_width="fill_parent"
@@ -44,7 +46,8 @@
             android:breakStrategy="balanced"
             android:inputType="textMultiLine"
             android:singleLine="false"
-            android:padding="5dp" />
+            android:padding="5dp"
+            android:id="@+id/contact_msg" />
 
         <Button
             android:layout_width="wrap_content"
@@ -55,5 +58,6 @@
             android:paddingLeft="70dp"
             android:paddingRight="70dp"
             android:text="Envoyer"
-            android:textColor="#fff" />
+            android:textColor="#fff"
+            android:id="@+id/contact_send" />
     </LinearLayout>
