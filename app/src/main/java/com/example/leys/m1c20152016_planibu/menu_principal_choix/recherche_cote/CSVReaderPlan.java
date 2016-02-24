@@ -24,7 +24,7 @@ public class CSVReaderPlan {
         try {
             String csvLine;
             while((csvLine = reader.readLine()) != null) {
-                String[] row = csvLine.split(";");
+                String[] row = csvLine.replace(",", "-").split(";");
                 resultList.add(row);
             }
         } catch(IOException ex) {

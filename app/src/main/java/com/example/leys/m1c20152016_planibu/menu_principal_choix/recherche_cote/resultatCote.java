@@ -29,10 +29,16 @@ public class resultatCote extends AppCompatActivity {
     private ItemArrayAdapter itemArrayAdapter;
     List<String> listeEtagere = new ArrayList<String>();
 
-    int Xleft;
-    int Xright;
-    int Ybottom;
-    int Yup;
+    Float Xleft;
+    Float Xright;
+    Float Ybottom;
+    Float Yup;
+
+    String XleftS;
+    String XrightS;
+    String YbottomS;
+    String YupS;
+
     String rowStr = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +96,7 @@ public class resultatCote extends AppCompatActivity {
                         System.out.println("scoreData0 : " + row[0]);
                         System.out.println("scoreData1 : " + row[1]);
 
+
                         rowStr = row[1];
                         listeEtagere.add(rowStr);
 
@@ -108,38 +115,79 @@ System.out.println("liste etagere : "+ listeEtagere.toString());
 String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]","");
         System.out.println("leeee : "+ le);
 
+        if (le.startsWith("0",0)){
+            le = le.replace("0","");
+        }
+
+        System.out.println("leeee2 : "+ le);
+
         InputStream inputStream2 = getResources().openRawResource(R.raw.etageres_sh_position);
         CSVReaderPlan csv2 = new CSVReaderPlan(inputStream2);
         List<String[]> scoreList2 = csv2.read();
 
         for (String[] scoreData : scoreList2) {
-            String str = Arrays.asList(scoreData).toString();
-            System.out.println("strX : " + str);
+            String str2 = Arrays.asList(scoreData).toString();
+
+            System.out.println("strX : " + str2);
+            String[] row = str2.split(",");
 
             for (int i = 0; i<=1; i++) {
-                String[] row = str.split(",");
-                System.out.println("startswithY : " + row[i]);
-                if (row[i].startsWith("0", 0) ) {
-
-                    row[i]=row[i].replace("0","");
-                    System.out.println("startswithZ : " + row[i]);
 
 
+                System.out.println("startswithY0 : " + row[0]);
+                System.out.println("startswithY1 : " + row[1]);
+                System.out.println("startswithY2 : " + row[2]);
+                System.out.println("startswithY3 : " + row[3]);
+                System.out.println("startswithY4 : " + row[4]);
+                System.out.println("startswithY5 : " + row[5]);
+
+                if (row[i].startsWith(" ",0)){
+                    row[i] = row[i].replace(" ","");
                 }
-                    if (row[i].startsWith(le, 0) ) {
+                System.out.println("startswithY : " + row[i]);
+
+                    if (row[i].startsWith(le, 0) && row[i].equals(le)) {
 
                         System.out.println("startswithX : " + row[i]);
 
-                        itemArrayAdapter.add(scoreData);
 
-                        System.out.println("scoreDataX : " + row[i]);
 
-                        rowStr = row[1];
+
+                        XleftS = row[2].replace(" ","");
+                        XrightS = row[3].replace(" ","");
+                        YbottomS = row[4].replace(" ","");
+                        YupS = row[5].replace(" ","");
+
+                        if (XleftS.contains("-")) {
+
+                            XleftS = XleftS.replace("-",".");
+                        }
+                        if (XrightS.contains("-")) {
+
+                            XrightS = XrightS.replace("-",".");
+                        }
+                        if (YbottomS.contains("-")) {
+
+                            YbottomS = YbottomS.replace("-",".");
+                        }
+                        if (YupS.contains("-")) {
+
+                            YupS = YupS.replace("-",".");
+                        }
+                        Xleft = Float.parseFloat(XleftS);
+                        Xright = Float.parseFloat(XrightS);
+                        Ybottom = Float.parseFloat(YbottomS);
+                        Yup = Float.parseFloat(YupS);
+
+                        System.out.println("COORD " + Xleft + " - "+ Xright + " - "+ Ybottom + " - " + Yup );
+
+                                rowStr = row[1];
                         listeEtagere.add(rowStr);
 
                         // String tvFinale = tv+ recherche;
                         //textView.setText(tvFinale);
                     }
+
 
                 }
             }
@@ -158,6 +206,7 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
         Bitmap bitMap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888);  //creates bmp
         bitMap = bitMap.copy(bitMap.getConfig(), true);     //lets bmp to be mutable
+        System.out.println("COORD2 " + Xleft + " - "+ Xright + " - "+ Ybottom + " - " + Yup );
 
         Canvas canvas = new Canvas(bitMap);                 //draw a canvas in defined bmp
 
@@ -173,6 +222,8 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
         iv.setBackgroundResource(R.drawable.plansh2);
         //canvas.drawCircle(30, 40, 3, paint);
         canvas.drawRect(Xleft,Yup,Xright,Ybottom,paint);
+        canvas.drawCircle(Xleft, Ybottom, 3, paint);
+        canvas.drawCircle(Xright, Yup, 3, paint);
         //invalidate to update bitmap in imageview
         iv.invalidate();
 
