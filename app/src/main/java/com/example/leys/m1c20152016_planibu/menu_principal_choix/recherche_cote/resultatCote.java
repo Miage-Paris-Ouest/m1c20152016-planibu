@@ -51,12 +51,6 @@ public class resultatCote extends AppCompatActivity {
         CSVReader csv = new CSVReader(inputStream);
         List<String[]> scoreList = csv.read();
 
-        /* % for (String[] scoreData : scoreList) {
-            if (Arrays.asList(scoreData).contains(recherche)) {
-
-                itemArrayAdapter.add(scoreData);
-            }
-        }*/
 
         for (String[] scoreData : scoreList) {
             String str = Arrays.asList(scoreData).toString();
