@@ -29,10 +29,11 @@ public class resultatCote extends AppCompatActivity {
     private ItemArrayAdapter itemArrayAdapter;
     List<String> listeEtagere = new ArrayList<String>();
 
-    int Xleft;
-    int Xright;
-    int Ybottom;
-    int Yup;
+    Float Xf;
+    Float Yf;
+
+    String Xs;
+    String Ys;
     String rowStr = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,18 +78,14 @@ public class resultatCote extends AppCompatActivity {
 
                 if (i == 4) {
 
-                    if (row[i].startsWith(" " + recherche, 0) ) {
+                    if (row[4].startsWith(" " + recherche, 0) ) {
 
                         System.out.println("startswith : " + row[i]);
 
                         itemArrayAdapter.add(scoreData);
 
-                        System.out.println("scoreData : " + row[i]);
-                        System.out.println("scoreData2 : " + row[2]);
-                        System.out.println("scoreData3 : " + row[3]);
-                        System.out.println("scoreData4 : " + row[4]);
-                        System.out.println("scoreData0 : " + row[0]);
-                        System.out.println("scoreData1 : " + row[1]);
+
+
 
                         rowStr = row[1];
                         listeEtagere.add(rowStr);
@@ -108,38 +105,72 @@ System.out.println("liste etagere : "+ listeEtagere.toString());
 String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]","");
         System.out.println("leeee : "+ le);
 
+        if (le.startsWith("0",0)){
+            le = le.replace("0","");
+        }
+
+        System.out.println("leeee2 : "+ le);
+
         InputStream inputStream2 = getResources().openRawResource(R.raw.etageres_sh_position);
         CSVReaderPlan csv2 = new CSVReaderPlan(inputStream2);
         List<String[]> scoreList2 = csv2.read();
 
         for (String[] scoreData : scoreList2) {
-            String str = Arrays.asList(scoreData).toString();
-            System.out.println("strX : " + str);
+            String str2 = Arrays.asList(scoreData).toString();
+
+            System.out.println("strX : " + str2);
+            String[] row = str2.split(",");
 
             for (int i = 0; i<=1; i++) {
-                String[] row = str.split(",");
-                System.out.println("startswithY : " + row[i]);
-                if (row[i].startsWith("0", 0) ) {
 
-                    row[i]=row[i].replace("0","");
-                    System.out.println("startswithZ : " + row[i]);
-
-
+                if (row[i].startsWith(" ",0)){
+                    row[i] = row[i].replace(" ","");
                 }
-                    if (row[i].startsWith(le, 0) ) {
+                System.out.println("startswithY : " + row[i]);
+
+                    if (row[i].startsWith(le, 0) && row[i].equals(le)) {
 
                         System.out.println("startswithX : " + row[i]);
 
-                        itemArrayAdapter.add(scoreData);
 
-                        System.out.println("scoreDataX : " + row[i]);
 
-                        rowStr = row[1];
+
+                        Xs = row[2].replace(" ","");
+                        Ys = row[3].replace(" ","");
+
+                        System.out.println("XS : " + row[i]);
+                        System.out.println("YS" + row[i]);
+
+
+                        if (Xs.contains("-")) {
+
+                            Xs = Xs.replace("-",".");
+                        }
+                        if (Ys.contains("]")) {
+
+                            Ys = Ys.replace("-",".");
+                            Ys = Ys.replace("]","");
+                        }
+
+                        if (Xs.contains("-")) {
+                            Xs = Xs.replace("-",".");
+
+                        }
+                            if (Ys.contains("-")) {
+
+                            Ys = Ys.replace("-",".");
+                        }
+                        Xf = Float.parseFloat(Xs);
+                        Yf = Float.parseFloat(Ys);
+
+
+                                rowStr = row[1];
                         listeEtagere.add(rowStr);
 
                         // String tvFinale = tv+ recherche;
                         //textView.setText(tvFinale);
                     }
+
 
                 }
             }
@@ -148,15 +179,12 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
 
 
-
-
-
-
-
+/*
 
         ImageView iv =  (ImageView) findViewById(R.id.imageView3);
 
-        Bitmap bitMap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888);  //creates bmp
+        Bitmap bitMap = Bitmap.createBitmap(100, 130, Bitmap.Config.ARGB_8888);  //creates bmp
+
         bitMap = bitMap.copy(bitMap.getConfig(), true);     //lets bmp to be mutable
 
         Canvas canvas = new Canvas(bitMap);                 //draw a canvas in defined bmp
@@ -170,14 +198,26 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
         iv.setImageBitmap(bitMap);
         //changed set image resource to set image background resource
-        iv.setBackgroundResource(R.drawable.plansh2);
+<<<<<<< Updated upstream
+        iv.setBackgroundResource(R.drawable.plansh);
         //canvas.drawCircle(30, 40, 3, paint);
         canvas.drawRect(Xleft,Yup,Xright,Ybottom,paint);
+        canvas.drawCircle(Xleft, Ybottom, 3, paint);
+        canvas.drawCircle(Xright, Yup, 3, paint);
         //invalidate to update bitmap in imageview
+=======
+        iv.setBackgroundResource(R.drawable.plansh2);
+        canvas.drawCircle(Xf, Yf, 3, paint);
+
+
+
+>>>>>>> Stashed changes
         iv.invalidate();
 
 
-        System.out.println("scoreList : " + scoreList);
+*/
+
+
 
 
     }
