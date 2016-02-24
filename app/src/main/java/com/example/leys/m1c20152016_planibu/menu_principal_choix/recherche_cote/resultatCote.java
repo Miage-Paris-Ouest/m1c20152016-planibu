@@ -219,7 +219,7 @@ String le = listeEtagere.toString().replace(" ","").replace("[","").replace("]",
 
         iv.setImageBitmap(bitMap);
         //changed set image resource to set image background resource
-        iv.setBackgroundResource(R.drawable.plansh2);
+        iv.setBackgroundResource(R.drawable.plansh);
         //canvas.drawCircle(30, 40, 3, paint);
         canvas.drawRect(Xleft,Yup,Xright,Ybottom,paint);
         canvas.drawCircle(Xleft, Ybottom, 3, paint);

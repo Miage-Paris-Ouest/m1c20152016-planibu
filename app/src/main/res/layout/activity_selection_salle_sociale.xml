@@ -19,12 +19,21 @@
         android:weightSum="1">
 
         <!--  android:id="@android:id/list"  pour créer une listFragment-->
-        <ListView
+        <ExpandableListView
             android:layout_width="187dp"
             android:layout_height="399dp"
-            android:id="@+id/salleSS_listview"
+            android:id="@+id/explv_ss"
             android:layout_gravity="right|top"
-            android:foregroundGravity="center_vertical|center_horizontal" />
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:focusable="false"/>
+
+        <!-- <ListView
+             android:layout_width="187dp"
+             android:layout_height="399dp"
+             android:id="@+id/salleSS_listview"
+             android:layout_gravity="right|top"
+             android:foregroundGravity="center_vertical|center_horizontal" />
+             -->
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -39,7 +48,8 @@
                 android:id="@+id/salleSS_img"
                 android:src="@drawable/planss"
                 android:layout_gravity="center"
-                android:contentDescription="@string/planbu" />
+                android:contentDescription="@string/planbu"
+                android:layout_weight="1"/>
 
         </FrameLayout>
 
