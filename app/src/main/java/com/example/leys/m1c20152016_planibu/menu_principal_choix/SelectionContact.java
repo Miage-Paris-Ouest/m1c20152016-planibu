@@ -27,6 +27,9 @@ public class SelectionContact extends AppCompatActivity implements AdapterView.O
     EditText objTextField;
     Button sendButton;
     Spinner subject;
+    String objet = null;
+    String message = null;
+    String mail = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,9 @@ public class SelectionContact extends AppCompatActivity implements AdapterView.O
 
     public void onClick(View v)
     {
+        objet = objTextField.getText().toString();
+        message =  msgTextField.getText().toString();
+
         if(mailTextField.getText().toString().length()==0)
         {
             mailTextField.setError( "Veuillez saisir votre email" );
@@ -64,8 +70,8 @@ public class SelectionContact extends AppCompatActivity implements AdapterView.O
 
             Intent email = new Intent(Intent.ACTION_SEND);
             email.putExtra(Intent.EXTRA_EMAIL, new String[]{"leyla.elattar@gmail.com"});
-            email.putExtra(Intent.EXTRA_SUBJECT, objTextField.toString());
-            email.putExtra(Intent.EXTRA_TEXT, Html.fromHtml(String.valueOf(msgTextField)));
+            email.putExtra(Intent.EXTRA_SUBJECT, objet);
+            email.putExtra(Intent.EXTRA_TEXT, message);
 //            email.setType("message/rfc822");
             email.setType("plain/text");
             startActivityForResult(Intent.createChooser(email, "Contact BU Paris 10"),1);
