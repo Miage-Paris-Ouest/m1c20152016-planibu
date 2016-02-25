@@ -73,9 +73,6 @@ public class SelectionSalleSociale extends AppCompatActivity {
                 //switchImgDiscipline();
                 switchDataHeaderImg();
 
-
-
-
             }
         });
 
@@ -86,7 +83,7 @@ public class SelectionSalleSociale extends AppCompatActivity {
             @Override
             public void onGroupCollapse(int groupPosition) {
                 Toast.makeText(getApplicationContext(),
-                        listDataHeader.get(groupPosition) + " Collapsed",
+                        listDataHeader.get(groupPosition) + " Fermé",
                         Toast.LENGTH_SHORT).show();
 
 
