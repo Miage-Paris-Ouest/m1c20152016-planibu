@@ -1,6 +1,10 @@
 
  
+###Lien travis
 [![travis project](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-planibu.svg)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-planibu/)
+
+[![Guide utilisateur et Les diagrammes ](https://github.com/Miage-Paris-Ouest/m1c20152016-planibu/tree/master/documentation)](https://github.com/Miage-Paris-Ouest/m1c20152016-planibu/tree/master/documentation/)
+
 
 
 #Spécifications fonctionnelles  #
