@@ -190,21 +190,18 @@ public class SelectionSalleSociale extends AppCompatActivity {
 
         // Adding child data
         List<String> si = new ArrayList<String>();
-        si.add("The Shawshank Redemption");
-        si.add("The Godfather");
-        si.add("The Godfather: Part II");
-        si.add("Pulp Fiction");
-        si.add("The Good, the Bad and the Ugly");
-        si.add("The Dark Knight");
-        si.add("12 Angry Men");
+        si.add("Bibliothéconomie ");
+        si.add("Ecrits - Edition - Audiovisuel ");
+        si.add("Presse et information ");
+        si.add("Les journalistes ");
+
 
         List<String> psycho = new ArrayList<String>();
-        psycho.add("The Conjuring");
-        psycho.add("Despicable Me 2");
-        psycho.add("Turbo");
-        psycho.add("Grown Ups 2");
-        psycho.add("Red 2");
-        psycho.add("The Wolverine");
+        psycho.add("Psychologie - Généralités ");
+        psycho.add("Psychophysiologie ");
+        psycho.add("Conscience ");
+        psycho.add("Perception ");
+
 
         List<String> socio = new ArrayList<String>();
         socio.add("2 Guns");
@@ -214,25 +211,20 @@ public class SelectionSalleSociale extends AppCompatActivity {
         socio.add("Europa Report");
 
         List<String> ethno = new ArrayList<String>();
-        ethno.add("2 Guns");
-        ethno.add("The Smurfs 2");
-        ethno.add("The Spectacular Now");
-        ethno.add("The Canyons");
-        ethno.add("Europa Report");
+        ethno.add("Mémoires. Récits personnels ");
+        ethno.add("Démographie ");
+        ethno.add("Socialisme ");
+        ethno.add("Cultures et civilisations ");
+
 
         List<String> physio = new ArrayList<String>();
         physio.add("2 Guns");
         physio.add("The Smurfs 2");
-        physio.add("The Spectacular Now");
-        physio.add("The Canyons");
-        physio.add("Europa Report");
 
         List<String> seduc = new ArrayList<String>();
         seduc.add("2 Guns");
         seduc.add("The Smurfs 2");
-        seduc.add("The Spectacular Now");
-        seduc.add("The Canyons");
-        seduc.add("Europa Report");
+
 
         List<String> sport = new ArrayList<String>();
         sport.add("2 Guns");
@@ -242,18 +234,18 @@ public class SelectionSalleSociale extends AppCompatActivity {
         sport.add("Europa Report");
 
         List<String> shist = new ArrayList<String>();
-        shist.add("2 Guns");
-        shist.add("The Smurfs 2");
-        shist.add("The Spectacular Now");
-        shist.add("The Canyons");
-        shist.add("Europa Report");
+        shist.add("Histoire de l’Arctique ");
+        shist.add("Histoire de l’Australie ");
+        shist.add("Histoire de l’Amérique du Sud ");
+        shist.add("Histoire de l’Asie ");
+
 
         List<String> medecine = new ArrayList<String>();
-        medecine.add("2 Guns");
-        medecine.add("The Smurfs 2");
-        medecine.add("The Spectacular Now");
-        medecine.add("The Canyons");
-        medecine.add("Europa Report");
+        medecine.add("Psychiatrie ");
+        medecine.add("Chirurgie ");
+        medecine.add("Anatomie ");
+        medecine.add("Santé et hygiène ");
+
 
         listDataChild.put(listDataHeader.get(0), si); // Header, Child data
         listDataChild.put(listDataHeader.get(1), psycho);

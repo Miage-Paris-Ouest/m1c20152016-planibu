@@ -19,7 +19,7 @@
         android:weightSum="1">
 
         <!--  android:id="@android:id/list"  pour créer une listFragment-->
-        <ListView
+        <ExpandableListView
             android:layout_width="130dp"
             android:layout_height="399dp"
             android:id="@+id/salleSH_listview"
