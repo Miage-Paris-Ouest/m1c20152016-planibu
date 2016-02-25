@@ -153,9 +153,7 @@ public class SelectionSalleSH extends AppCompatActivity {
         ba.add("Architecture ");
 
         List<String> urb = new ArrayList<String>();
-        urb.add("2 Guns");
-        urb.add("The Smurfs 2");
-        urb.add("The Spectacular Now");
+
 
 
         List<String> histo= new ArrayList<String>();

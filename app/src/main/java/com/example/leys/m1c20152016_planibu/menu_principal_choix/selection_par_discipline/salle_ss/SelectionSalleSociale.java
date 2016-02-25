@@ -222,16 +222,11 @@ public class SelectionSalleSociale extends AppCompatActivity {
         physio.add("The Smurfs 2");
 
         List<String> seduc = new ArrayList<String>();
-        seduc.add("2 Guns");
-        seduc.add("The Smurfs 2");
+       
 
 
         List<String> sport = new ArrayList<String>();
-        sport.add("2 Guns");
-        sport.add("The Smurfs 2");
-        sport.add("The Spectacular Now");
-        sport.add("The Canyons");
-        sport.add("Europa Report");
+
 
         List<String> shist = new ArrayList<String>();
         shist.add("Histoire de l’Arctique ");
