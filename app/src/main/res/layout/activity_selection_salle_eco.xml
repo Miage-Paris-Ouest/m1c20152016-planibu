@@ -40,7 +40,7 @@
                 android:layout_width="163dp"
                 android:layout_height="406dp"
                 android:id="@+id/salleEco_img"
-                android:src="@drawable/plandroit"
+                android:src="@drawable/img_construction"
                 android:layout_gravity="center"
                 android:contentDescription="@string/planbu" />
 
